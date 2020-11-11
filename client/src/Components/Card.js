@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Card(props) {
+function Card(props) {
     return (
         //card style
         <div style={styles.card}>
@@ -13,7 +13,7 @@ export default function Card(props) {
 const styles = {
     card: {
         width: '350px',
-        height: '200px',
+        height: '300px',
         backgroundColor: 'white',
         // border: '1px solid black',
         boxSizing: 'border-box',
@@ -27,3 +27,5 @@ const styles = {
         height: '100%',
     }
 }
+//enables react to not render elements that do not need to be rerendered
+export default React.memo(Card)
