@@ -138,7 +138,8 @@ export default class HorizontalCarousel extends Component {
       </div>
     );
   }
-} //style object
+} 
+//style object
 const styles = {
   //viewport object- holds pictures in the center
   view_port: {
