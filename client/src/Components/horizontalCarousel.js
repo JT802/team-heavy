@@ -11,8 +11,8 @@ export default class HorizontalCarousel extends Component {
     };
   }
 
-  //clone the first and last cards
-  //this creates the illusion of a carousel
+//   clone the first and last cards
+//   this creates the illusion of a carousel
   componentDidMount() {
     //clone of first card
     let first_card_clone = this.card_container.children[0].cloneNode(true);
@@ -97,9 +97,11 @@ export default class HorizontalCarousel extends Component {
   render() {
     return (
       <div>
+          {/* Previous Button handles previous on click*/}
         <button className="previousButton" style={styles.button} onClick={this.handle_previous}>
           Previous
         </button>
+         {/* Next Button handles next function on click*/}
         <button className = "nextButton" onClick={this.handle_next}> Next </button>
         {/*Div with viewport takes style from styles.view port*/}
         <div className="view-port" style={styles.view_port}>
@@ -107,7 +109,7 @@ export default class HorizontalCarousel extends Component {
             ref={(ref_id) => (this.card_container = ref_id)}
             className="card-container"
             style={styles.card_container}
-          >
+          >{/*Card Image Components, can fill these how we like */}
             <Card card_number="https://picsum.photos/800/300" />
             <Card card_number="https://picsum.photos/500/300" />
             <Card card_number="https://picsum.photos/250/300" />
@@ -131,14 +133,15 @@ const styles = {
   //viewport object- holds pictures in the center
   view_port: {
     //center viewport
+    //holds the slider position
     position: "absolute",
     top: "50%",
-    left: "50%",
+    left: "45%",
     //so it's center
     transform: "translate(-50%, -50%)",
-    width: "450px",
+    width: "350px",
     height: "300px",
-    // overflow: 'hidden'
+    overflow: 'hidden'
   },
   //flex container for carousel
   card_container: {
