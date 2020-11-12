@@ -1,3 +1,103 @@
-.App {
+body {
   text-align: center;
+  /* background-image: url(https://ak5.picdn.net/shutterstock/videos/26630575/thumb/1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 80%; */
+  background-image: linear-gradient(black, black, white, white);
 }
+
+#BHW {
+  z-index: 1;
+  opacity: 1;
+  height: 30vw;
+  width: 30vw;
+  /* border: 10px groove whitesmoke;
+  border-radius: 25px;
+  border-width: 2px; */
+}
+.info {
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 1000;
+  color: yellow;
+  animation: blur 1s ease-out infinite;
+}
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 50px yellow;
+  }
+}
+
+#parallax-wrapper {
+  z-index: -1;
+  display: flex;
+  height: 20vh;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.parallax {
+  z-index: -1;
+  height: 25vh;
+  width: 100%;
+  background-image: url(https://de.blog.marketo.com/content/uploads/sites/3/2019/01/GettyImages-155444736-Concert-crowd-cheering-and-watching-a-band-on-stage-blinded-by-stage-lights.gif);
+  background-repeat: repeat-x;
+  background-position: 50 10%;
+  background-size: 300px;
+  animation: 50s para infinite linear;
+}
+
+@keyframes para {
+  100% {
+    background-position: -1000px 10%;
+  }
+}
+
+/* :root {
+  --shadow-color: purple;
+  --shadow-color-light: black;
+}
+
+.info {
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 200;
+  letter-spacing: 3px;
+  color: antiquewhite;
+  animation: neon 1s infinite;
+}
+
+@keyframes neon {
+  0% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light),
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 0 0 30px var(--shadow-color),
+      0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color),
+      0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color),
+      0 0 200px var(--shadow-color);
+  }
+  50% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light),
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 0 0 5px var(--shadow-color),
+      0 0 15px var(--shadow-color), 0 0 25px var(--shadow-color),
+      0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color),
+      0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color),
+      0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+  }
+  100% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light),
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 0 0 3px var(--shadow-color),
+      0 0 10px var(--shadow-color), 0 0 20px var(--shadow-color),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color),
+      0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color),
+      0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+} */
