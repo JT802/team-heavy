@@ -19,8 +19,8 @@ const styles = {
         boxSizing: 'border-box',
         fontSize: '2.5em',
         color: 'white',
-        // paddingLeft:'50px',
-        // paddingRight:'50px'
+        paddingLeft:'50px',
+        paddingRight:'50px'
     },
     image: {
         width:'100%',
