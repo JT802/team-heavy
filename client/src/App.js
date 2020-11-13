@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "./App.css";
-import Homepage from "./Homepage.js";
+import Home from "./Components/HomeComponent/Homepage.js";
+import HorizontalCarousel from "./Components/CarouselComponents/horizontalCarousel";
+import SecondCarousel from "./Components/CarouselComponents/SecondCarousel";
 
 function App() {
   return (
-    <div>
+    <div id="main-wrapper">
       <Router>
         <Switch>
-          <Route exact path="/" render={() => <Homepage />} />
-          <Route path="" />
+          <Route exact path="/" component={Home} />
+          <Route
+            path="/HorizontalCarousel"
+            component={HorizontalCarousel}
+          ></Route>
+          <Route path="/SecondCarousel" component={SecondCarousel}></Route>
         </Switch>
       </Router>
     </div>
