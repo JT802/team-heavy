@@ -6,7 +6,7 @@ const Container = styled.div`
     justify-content: center;
 
 `
-export default function App() {
+export default function Modal() {
 return (
 <>
 <h1>hello</h1>
