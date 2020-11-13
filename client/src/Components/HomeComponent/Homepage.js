@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Homepage() {
   return (
-    <Link to="/HorizontalCarousel">
+    <Link id="link" to="/HorizontalCarousel">
       <div id="homepage-wrapper">
         <p class="info">Touch the screen on the kiosk to learn more!</p>
         <img id="BHW" src={BHW2} alt="BHW Image" />
