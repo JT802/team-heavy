@@ -11,6 +11,7 @@ body {
   opacity: 1;
   height: 30vw;
   width: 30vw;
+  
   /* border: 10px groove whitesmoke;
     border-radius: 25px;
     border-width: 2px; */
@@ -37,7 +38,6 @@ body {
 }
 
 #homepage-wrapper {
-  z-index: -5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +47,7 @@ body {
 }
 
 #parallax-wrapper {
-  z-index: -1;
+  z-index: 1;
   display: flex;
   height: 23vh;
   overflow: hidden;

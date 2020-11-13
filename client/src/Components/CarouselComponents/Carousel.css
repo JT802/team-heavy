@@ -1,29 +1,17 @@
-.buttonBox{
-    display: flex;
-    justify-content: center;
-    width: 50rem;
-    margin-top: 10%;
-
+.buttonBox {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  margin-top: 3%;
 }
 
-
-.previousButton {
-  width: 10rem;
-  height: 3rem;
-  margin-left: 20%;
-  text-align: center;
-  font-weight: 900;
-  font-size: 30px;
-  border: 2px solid black;
-  padding:0;
-}
-
+.previousButton,
 .nextButton {
-  width: 10rem;
-  height: 3rem;
-  margin-left: 30%;
+  width: 15vw;
+  height: 10vh;
+  text-align: center;
   font-weight: 900;
   font-size: 30px;
   border: 2px solid black;
-  text-align: center;
+  padding: 0;
 }

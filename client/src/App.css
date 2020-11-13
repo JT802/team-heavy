@@ -3,3 +3,7 @@ body {
   padding: 0;
 }
 
+#main-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
