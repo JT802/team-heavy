@@ -121,10 +121,10 @@ export default class HorizontalCarousel extends Component {
           >
             {/*Card Image Components, can fill these how we like */}
             <Card card_number=" https://omeka.bigheavyworld.com/files/original/98c5dd94467b09101342b858a275e26b.jpg" />
-            <Card card_number="https://picsum.photos/500/300" />
-            <Card card_number="https://picsum.photos/250/300" />
-            <Card card_number="https://picsum.photos/300/300" />
-            <Card card_number="https://picsum.photos/400/300" />
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/ab677b4452224e18d40221c2ebb32651.jpg" />
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/1b9cf23df2d30086913a8e82c1adad8c.jpg" />
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/fbd2849c3eb1dfb403e7ba6f8f53ebbc.jpg" />
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/31372a662168cddf3bcd04d22bce7196.jpg" />
             <Card card_number="https://picsum.photos/210/300" />
             <Card card_number="https://picsum.photos/250/300" />
             <Card card_number="https://picsum.photos/100/300" />
