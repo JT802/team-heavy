@@ -4,6 +4,7 @@ import Home from "./Components/HomeComponent/Homepage.js";
 import HorizontalCarousel from "./Components/CarouselComponents/horizontalCarousel";
 import SecondCarousel from "./Components/CarouselComponents/SecondCarousel";
 import BrentCarousel from "./Components/BrentCarousel";
+import DeckCascade, { Deck } from "./Components/CarouselComponents/DeckCascade"
 function App() {
   return (
     <div id="main-wrapper">
@@ -16,6 +17,7 @@ function App() {
           ></Route>
           <Route path="/SecondCarousel" component={SecondCarousel}></Route>
           <Route path="/BrentCarousel" component={BrentCarousel}></Route>
+          <Route path="/DeckCascade" component = {DeckCascade}></Route>
         </Switch>
       </Router>
     </div>
