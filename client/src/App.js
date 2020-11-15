@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/HomeComponent/Homepage.js";
 import HorizontalCarousel from "./Components/CarouselComponents/horizontalCarousel";
 import SecondCarousel from "./Components/CarouselComponents/SecondCarousel";
-
+import BrentCarousel from "./Components/BrentCarousel";
 function App() {
   return (
     <div id="main-wrapper">
@@ -15,6 +15,7 @@ function App() {
             component={HorizontalCarousel}
           ></Route>
           <Route path="/SecondCarousel" component={SecondCarousel}></Route>
+          <Route path="/BrentCarousel" component={BrentCarousel}></Route>
         </Switch>
       </Router>
     </div>
