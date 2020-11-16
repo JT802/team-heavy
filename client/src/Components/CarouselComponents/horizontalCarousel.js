@@ -7,7 +7,7 @@ export default class HorizontalCarousel extends Component {
     super(props);
     //state of current card is at index 1
     this.state = {
-      current_card: 1,
+      current_card: 0,
     };
   }
 
@@ -29,7 +29,7 @@ export default class HorizontalCarousel extends Component {
 
     //instant transtition to card index 1
     this.card_container.style.transitionDuration = "0.0s";
-    this.card_container.style.transform = `translate(-${350}px)`;
+    this.card_container.style.transform = `translate(-${0}px)`;
   }
 
   //next function onclick handler
@@ -41,8 +41,8 @@ export default class HorizontalCarousel extends Component {
       this.setState({ current_card: new_current_card }, () => {
         this.card_container.style.transitionDuration = "0.5s";
         this.card_container.style.transform = `translate(-${
-          350 * this.state.current_card
-        }px)`;
+          30.5 * this.state.current_card
+        }vw)`;
         //if at the last card then transition back to the first card
         if (
           this.state.current_Card ===
@@ -51,7 +51,7 @@ export default class HorizontalCarousel extends Component {
           setTimeout(() => {
             //animation for card movement
             this.card_container.style.transitionDuration = "0.5s";
-            this.card_container.style.transform = `translate(-${350}px)`;
+            this.card_container.style.transform = `translate(-${30.5}vw)`;
             //need to set state here to 1 to reset
             this.setState({ current_card: 1 });
           }, 502);
@@ -72,15 +72,15 @@ export default class HorizontalCarousel extends Component {
       this.setState({ current_card: new_current_card }, () => {
         this.card_container.style.transitionDuration = "0.5s";
         this.card_container.style.transform = `translate(-${
-          350 * this.state.current_card
-        }px)`;
+          30.5 * this.state.current_card
+        }vw)`;
 
         if (this.state.current_Card === 0) {
           setTimeout(() => {
             this.card_container.style.transitionDuration = "0.5s";
             this.card_container.style.transform = `translate(-${
-              350 * (this.card_container.children.length - 2)
-            }px)`;
+              30.5 * (this.card_container.children.length - 2)
+            }vw`;
             //need to set state here to 1 to reset
             this.setState({
               current_card: this.card_container.children.length - 2,
@@ -108,8 +108,7 @@ export default class HorizontalCarousel extends Component {
           </button>
           {/* Next Button handles next function on click*/}
           <button className="nextButton" onClick={this.handle_next}>
-            {" "}
-            Next{" "}
+            Next
           </button>
         </div>
         {/*Div with viewport takes style from styles.view port*/}
@@ -120,25 +119,22 @@ export default class HorizontalCarousel extends Component {
             style={styles.card_container}
           >
             {/*Card Image Components, can fill these how we like */}
+            {/* <Card card_number=" https://omeka.bigheavyworld.com/files/original/98c5dd94467b09101342b858a275e26b.jpg" /> */}
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/ab677b4452224e18d40221c2ebb32651.jpg" />
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/1b9cf23df2d30086913a8e82c1adad8c.jpg" />
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/fbd2849c3eb1dfb403e7ba6f8f53ebbc.jpg" />
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/31372a662168cddf3bcd04d22bce7196.jpg" />
             <Card card_number=" https://omeka.bigheavyworld.com/files/original/98c5dd94467b09101342b858a275e26b.jpg" />
             <Card card_number="https://omeka.bigheavyworld.com/files/original/ab677b4452224e18d40221c2ebb32651.jpg" />
             <Card card_number="https://omeka.bigheavyworld.com/files/original/1b9cf23df2d30086913a8e82c1adad8c.jpg" />
             <Card card_number="https://omeka.bigheavyworld.com/files/original/fbd2849c3eb1dfb403e7ba6f8f53ebbc.jpg" />
             <Card card_number="https://omeka.bigheavyworld.com/files/original/31372a662168cddf3bcd04d22bce7196.jpg" />
-            <Card card_number="https://picsum.photos/210/300" />
-            <Card card_number="https://picsum.photos/250/300" />
-            <Card card_number="https://picsum.photos/100/300" />
-            <Card card_number="https://picsum.photos/220/300" />
-            <Card card_number="https://picsum.photos/290/300" />
-            <Card card_number="https://picsum.photos/240/300" />
-            <Card card_number="https://picsum.photos/210/400" />
-            <Card card_number="https://picsum.photos/240/500" />
           </div>
         </div>
       </div>
     );
   }
-} 
+}
 //style object
 const styles = {
   //viewport object- holds pictures in the center
@@ -147,12 +143,13 @@ const styles = {
     //holds the slider position
     position: "absolute",
     top: "50%",
-    left: "45%",
+    left: "50%",
     //so it's center
     transform: "translate(-50%, -50%)",
-    width: "350px",
-    height: "300px",
-    // overflow: 'hidden'
+    height: "auto",
+    width: "60vw",
+    paddingLeft: "50px",
+    overflow: "hidden",
   },
   //flex container for carousel
   card_container: {
