@@ -15,7 +15,7 @@ function App() {
             path="/HorizontalCarousel"
             component={HorizontalCarousel}
           ></Route>
-          <Route path="/SecondCarousel" component={SecondCarousel}></Route>
+          {/* <Route path="/SecondCarousel" component={SecondCarousel}></Route> */}
           <Route path="/BrentCarousel" component={BrentCarousel}></Route>
           <Route path="/DeckCascade" component={DeckCascade}></Route>
         </Switch>
