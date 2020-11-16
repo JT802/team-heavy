@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Card from "../CardComponents/CardCascade";
 import "./DeckCascade.css";
+
 //Images from ImageArray-Tim Snow
 import { imagepaths } from "./ImageArray";
+import ModalApp from "../Modal/ModalApp.js";
 
 export class Deck extends Component {
   constructor(props) {
@@ -196,13 +198,18 @@ export class Deck extends Component {
     //so we can reference the deck
     return (
       
-      <div className= "WholePage">
-        <div><h1>Tim Snow Photography: The Last Show</h1></div>
-        <div className = "ButtonContainer" >
+      <div className="WholePage">
+        {/* <div id="modal">
+          <Modal />
+        </div> */}
+        <div>
+          <h1>Tim Snow Photography: The Last Show< ModalApp /></h1>
+        </div>
+        <div className="ButtonContainer">
           <button onClick={this.handle_previous}>Previous</button>
           <button onClick={this.handle_next}>Next</button>
         </div>
-        <div>
+        <div className="ImageSlider">
           <div ref={(ref_id) => (this.deck = ref_id)} style={styles.deck}>
             {/* using the newcards */}
             {this.state.cards}
@@ -232,6 +239,5 @@ const styles = {
     justifyContent: "space-between",
   },
 };
-
 
 export default Deck;

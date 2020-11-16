@@ -5,7 +5,7 @@ import Home from "./Components/HomeComponent/Homepage.js";
 import HorizontalCarousel from "./Components/CarouselComponents/HorizontalCarousel";
 import SecondCarousel from "./Components/CarouselComponents/SecondCarousel";
 import BrentCarousel from "./Components/BrentCarousel";
-import DeckCascade, { Deck } from "./Components/CarouselComponents/DeckCascade";
+import DeckCascade from "./Components/CarouselComponents/DeckCascade";
 function App() {
   return (
     // route to the carousel page after landing page screen is touched
