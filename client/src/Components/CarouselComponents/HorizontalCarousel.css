@@ -1,0 +1,17 @@
+.buttonBox {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  margin-top: 3%;
+}
+
+.previousButton,
+.nextButton {
+  width: 15vw;
+  height: 10vh;
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  border: 2px solid black;
+  padding: 0;
+}

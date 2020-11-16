@@ -28,9 +28,9 @@ const styles = {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    height: "50vh",
-    width: "40vw",
-    border: "2px solid black",
+    height: "65%",
+    width: "50%",
+    border: "5px solid white",
     boxSizing: "border-box",
   },
   image: {
