@@ -1,16 +1,19 @@
 {
   "name": "capstone-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a capstone project for BCA and Big Heavy World. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd client && npm start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react": "^17.0.1"
   }
 }

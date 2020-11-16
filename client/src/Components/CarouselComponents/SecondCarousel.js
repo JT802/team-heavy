@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SecondCard from "../CardComponents/SecondCard.js";
-import "./Carousel.css"
+import "./Carousel.css";
 
 export default class SecondCarousel extends Component {
   constructor(props) {
@@ -11,8 +11,8 @@ export default class SecondCarousel extends Component {
     };
   }
 
-//   clone the first and last cards
-//   this creates the illusion of a carousel
+  //   clone the first and last cards
+  //   this creates the illusion of a carousel
   componentDidMount() {
     //clone of first card
     let first_card_clone = this.card_container.children[0].cloneNode(true);
@@ -29,7 +29,7 @@ export default class SecondCarousel extends Component {
 
     //instant transtition to card index 1
     this.card_container.style.transitionDuration = "0.0s";
-    this.card_container.style.transform = `translate(-${350}px)`;
+    this.card_container.style.transform = `translate(-${500}px)`;
   }
 
   //next function onclick handler
@@ -41,7 +41,7 @@ export default class SecondCarousel extends Component {
       this.setState({ current_card: new_current_card }, () => {
         this.card_container.style.transitionDuration = "0.5s";
         this.card_container.style.transform = `translate(-${
-          350 * this.state.current_card
+          500 * this.state.current_card
         }px)`;
         //if at the last card then transition back to the first card
         if (
@@ -51,7 +51,7 @@ export default class SecondCarousel extends Component {
           setTimeout(() => {
             //animation for card movement
             this.card_container.style.transitionDuration = "0.5s";
-            this.card_container.style.transform = `translate(-${350}px)`;
+            this.card_container.style.transform = `translate(-${500}px)`;
             //need to set state here to 1 to reset
             this.setState({ current_card: 1 });
           }, 502);
@@ -72,14 +72,14 @@ export default class SecondCarousel extends Component {
       this.setState({ current_card: new_current_card }, () => {
         this.card_container.style.transitionDuration = "0.5s";
         this.card_container.style.transform = `translate(-${
-          350 * this.state.current_card
+          500 * this.state.current_card
         }px)`;
 
         if (this.state.current_Card === 0) {
           setTimeout(() => {
             this.card_container.style.transitionDuration = "0.5s";
             this.card_container.style.transform = `translate(-${
-              350 * (this.card_container.children.length - 2)
+              500 * (this.card_container.children.length - 2)
             }px)`;
             //need to set state here to 1 to reset
             this.setState({
@@ -97,13 +97,20 @@ export default class SecondCarousel extends Component {
   render() {
     return (
       <div>
-          <div className="buttonBox">
+        <div className="buttonBox">
           {/* Previous Button handles previous on click*/}
-        <button className="previousButton" style={styles.button} onClick={this.handle_previous}>
-          Previous
-        </button>
-         {/* Next Button handles next function on click*/}
-        <button className = "nextButton" onClick={this.handle_next}> Next </button>
+          <button
+            className="previousButton"
+            style={styles.button}
+            onClick={this.handle_previous}
+          >
+            Previous
+          </button>
+          {/* Next Button handles next function on click*/}
+          <button className="nextButton" onClick={this.handle_next}>
+            {" "}
+            Next{" "}
+          </button>
         </div>
         {/*Div with viewport takes style from styles.view port*/}
         <div className="view-port" style={styles.view_port}>
@@ -111,9 +118,10 @@ export default class SecondCarousel extends Component {
             ref={(ref_id) => (this.card_container = ref_id)}
             className="card-container"
             style={styles.card_container}
-          >{/*Card Image Components, can fill these how we like */}
-            <SecondCard card_number="https://picsum.photos/800/300" />
-            <SecondCard number="https://picsum.photos/500/300" />
+          >
+            {/*Card Image Components, can fill these how we like */}
+            <SecondCard card_number="https://omeka.bigheavyworld.com/files/original/ab677b4452224e18d40221c2ebb32651.jpg" />
+            <SecondCard card_number="https://picsum.photos/500/300" />
             <SecondCard card_number="https://picsum.photos/250/300" />
             <SecondCard card_number="https://picsum.photos/300/300" />
             <SecondCard card_number="https://picsum.photos/400/300" />
@@ -141,9 +149,9 @@ const styles = {
     left: "45%",
     //so it's center
     transform: "translate(-50%, -50%)",
-    width: "520px",
+    width: "500px",
     height: "500px",
-    overflow: 'hidden'
+    overflow: "hidden",
   },
   //flex container for carousel
   card_container: {
@@ -152,9 +160,8 @@ const styles = {
     width: "fit-content",
   },
   Previous_Button: {
-      display:'flex',
-      width:'40px',
-      paddingRight:'10px'
-
+    display: "flex",
+    width: "40px",
+    paddingRight: "10px",
   },
 };
