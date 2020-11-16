@@ -120,7 +120,7 @@ export default class SecondCarousel extends Component {
             style={styles.card_container}
           >
             {/*Card Image Components, can fill these how we like */}
-            <SecondCard card_number="https://picsum.photos/800/300" />
+            <SecondCard card_number="https://omeka.bigheavyworld.com/files/original/ab677b4452224e18d40221c2ebb32651.jpg" />
             <SecondCard card_number="https://picsum.photos/500/300" />
             <SecondCard card_number="https://picsum.photos/250/300" />
             <SecondCard card_number="https://picsum.photos/300/300" />
