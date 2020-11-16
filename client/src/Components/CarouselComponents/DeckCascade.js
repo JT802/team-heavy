@@ -36,7 +36,7 @@ export class Deck extends Component {
     let new_zIndex = 0;
     let new_scale = 1;
 
-    //for loop pushing colors into new cards
+    //for loop pushing images and other properties into new cards
     //9 is total number of cards, as long as less than total create a card
     for (let i = 0; i < 8; i++) {
       //here  we are telling the computer which side of the center image/card we are on
@@ -77,8 +77,6 @@ export class Deck extends Component {
           scale= {new_scale}
           //image prop
           images={imagepaths[i]}
-     
-
         />
       );
     }
@@ -152,16 +150,17 @@ export class Deck extends Component {
            this.deck.children[this.deck.children.length -1].style.transform= `translate(-50%, -50%) scale(0)`
 
         setTimeout(() => {
+          //instantly take on the last card properties, so we don't see a slide to the right
              this.deck.children[this.deck.children.length -1].style.transitionDuration = '0.0s';
              this.deck.children[this.deck.children.length -1].style.left = first_cards_left;
              this.deck.children[this.deck.children.length -1].style.zIndex = first_cards_zIndex;
-
             this.deck.insertBefore(this.deck.children[this.deck.children.length-1], this.deck.children[0]);
-
+            //timeout of one second
+              //this transition is for shrinking back in, much like the transition to shrink out from before
            setTimeout(() => {
             this.deck.children[0].style.transitionDuration = '0.2s';
             this.deck.children[0].style.transform = first_cards_transform;
-
+              //once the animation/transition is done set back to false so it can repeat
             this.animation_in_progress= false;
            }, 100)
        }, 700)
@@ -188,6 +187,9 @@ export class Deck extends Component {
   }
 }
 
+
+
+//array of images, imported at the top
 export const imagepaths= [
     heavy,
     heavy2,
