@@ -1,3 +1,4 @@
+//imports
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/HomeComponent/Homepage.js";
@@ -6,6 +7,7 @@ import SecondCarousel from "./Components/CarouselComponents/SecondCarousel";
 
 function App() {
   return (
+    // route to the carousel page after landing page screen is touched
     <div id="main-wrapper">
       <Router>
         <Switch>

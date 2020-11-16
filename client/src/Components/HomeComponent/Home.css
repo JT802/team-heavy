@@ -1,21 +1,17 @@
+/* styling for the touch screen landing page */
 body {
   text-align: center;
-
-  /* background-image: url(https://ak5.picdn.net/shutterstock/videos/26630575/thumb/1.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 80%; */
 }
 
+/* Big Heavy World logo styling*/
 #BHW {
   z-index: 1;
   opacity: 1;
   height: 30vw;
   width: 30vw;
-  
-  /* border: 10px groove whitesmoke;
-    border-radius: 25px;
-    border-width: 2px; */
 }
+
+/* text styling with a blur animation that blinks*/
 .info {
   text-transform: uppercase;
   font-size: 25px;
@@ -32,7 +28,7 @@ body {
       0px 0px 40px white, 0px 0px 50px white;
   }
 }
-
+ /* styling text on landing page so link isn'y underlined after click */
 #link {
   text-decoration: none;
 }
@@ -45,7 +41,7 @@ body {
   height: 100vh;
   background-image: linear-gradient(black, black, white, white);
 }
-
+ /* container for the parallax scrolling effect */
 #parallax-wrapper {
   z-index: 1;
   display: flex;
@@ -55,6 +51,7 @@ body {
   align-items: flex-end;
 }
 
+/* parallax effect for crowd image, scrolls across bottom */
 .parallax {
   z-index: -1;
   height: 100%;
@@ -118,11 +115,3 @@ body {
     }
   } */
 
-/* #main-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-} */
-
-/* .App {
-    text-align: center;
-  } Not sure where this came from */
