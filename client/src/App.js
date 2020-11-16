@@ -4,12 +4,12 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/HomeComponent/Homepage.js";
 import HorizontalCarousel from "./Components/CarouselComponents/HorizontalCarousel";
 import BrentCarousel from "./Components/BrentCarousel";
-import DeckCascade from "./Components/CarouselComponents/DeckCascade";
-
+import DeckCascade, { Deck } from "./Components/CarouselComponents/DeckCascade";
+import NavBar from "./Components/NavBar"
 
 function App() {
   return (
-    // route to the carousel page after landing page screen is touched
+    // -- Need the NavBar to exist on every page *except* /Home -- How? -- //
     <div id="main-wrapper">
       <Router>
         <Switch>
@@ -17,9 +17,10 @@ function App() {
           <Route
             path="/HorizontalCarousel"
             component={HorizontalCarousel}
-          ></Route>
-          <Route path="/BrentCarousel" component={BrentCarousel}></Route>
-          <Route path="/DeckCascade" component={DeckCascade}></Route>
+          ><NavBar/></Route>
+          <Route path="/SecondCarousel" component={SecondCarousel}><NavBar/></Route>
+          <Route path="/BrentCarousel" component={BrentCarousel}><NavBar/></Route>
+          <Route path="/DeckCascade" component={DeckCascade}><NavBar/></Route>
         </Switch>
       </Router>
     </div>
