@@ -1,18 +1,1 @@
-.Container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
-}
 
-.StyledButton{
-    min-width: 100px;
-    padding: 16px 32px;
-    border-radius: 4px;
-    border:none;
-    background: black;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-
-}

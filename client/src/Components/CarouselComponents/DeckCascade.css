@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-
+.WholePage {
+  background-color: grey;
+  overflow-y: hidden;
+}
 .ButtonContainer {
   display: flex;
   width: 100vw;
@@ -23,8 +26,13 @@ button {
 
 h1 {
   font-family: "Rubik", sans-serif;
-  font-size: 3rem;
-  margin-top: 5%;
+  font-size: 4rem;
+  margin-top: 3%;
+  margin-right: 15%;
+}
+
+h1:hover {
+  text-transform: lowercase;
 }
 
 #modal {

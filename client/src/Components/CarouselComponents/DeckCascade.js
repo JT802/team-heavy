@@ -6,7 +6,7 @@ import "./DeckCascade.css";
 import { imagepaths } from "./ImageArray";
 import ModalApp from "../Modal/ModalApp.js";
 
-export class Deck extends Component {
+export default class DeckCascade extends Component {
   constructor(props) {
     super(props);
 
@@ -199,11 +199,8 @@ export class Deck extends Component {
     return (
       
       <div className="WholePage">
-        {/* <div id="modal">
-          <Modal />
-        </div> */}
         <div>
-          <h1>Tim Snow Photography: The Last Show< ModalApp /></h1>
+          <h1>Tim Snow Photography: The Last Show</h1>
         </div>
         <div className="ButtonContainer">
           <button onClick={this.handle_previous}>Previous</button>
@@ -213,6 +210,9 @@ export class Deck extends Component {
           <div ref={(ref_id) => (this.deck = ref_id)} style={styles.deck}>
             {/* using the newcards */}
             {this.state.cards}
+          </div>
+          <div className= "ModalButton">
+          <ModalApp />
           </div>
         </div>
       </div>
@@ -229,8 +229,8 @@ const styles = {
     top: "55%",
     left: "50%",
     // transform: "translate(-50%, -50%)",
-    height: "80vh",
-    width: "50vw",
+    height: "55vh",
+    width: "40vw",
     // backgroundColor: "green",
   },
   ButtonContainer: {
@@ -240,4 +240,4 @@ const styles = {
   },
 };
 
-export default Deck;
+
