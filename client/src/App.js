@@ -1,5 +1,4 @@
-//imports
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/HomeComponent/Homepage.js";
 import HorizontalCarousel from "./Components/CarouselComponents/HorizontalCarousel";
@@ -11,8 +10,8 @@ import "./App.css";
 
 function App() {
   return (
-    // -- We need the NavBar to exist on every page *except* for /Home -- //
-    <div id="main-wrapper">
+    // -- NavBar can persist across pages -- //
+    <div>
       <Router>
         <NavBar />
         <Switch>
