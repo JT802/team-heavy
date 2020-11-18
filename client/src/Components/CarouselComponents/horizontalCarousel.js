@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Card from "../CardComponents/Card.js";
-import "./Carousel.css";
+import "./HorizontalCarousel.css";
 
 export default class HorizontalCarousel extends Component {
   constructor(props) {

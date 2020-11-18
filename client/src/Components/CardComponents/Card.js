@@ -12,16 +12,12 @@ function Card(props) {
 //card styles
 const styles = {
     card: {
-        width: '30vw',
-        height: '40vh',
+        width: '35vw',
+        height: '55vh',
         backgroundColor: 'white',
-        // border: '1px solid black',
         boxSizing: 'border-box',
         fontSize: '2.5em',
         border:"2px solid white"
- 
-        // paddingLeft:'30px',
-        // paddingRight:'30px'
     },
     image: {
         width:'98%',

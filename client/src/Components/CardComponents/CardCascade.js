@@ -26,12 +26,11 @@ const styles = {
   card: {
     position: "absolute",
     top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    height: "50vh",
-    width: "40vw",
-    border: "2px solid black",
+    height: "85%",
+    width: "65%",
+    border: "5px solid white",
     boxSizing: "border-box",
+    z_index:"20"
   },
   image: {
     width: '100%',
