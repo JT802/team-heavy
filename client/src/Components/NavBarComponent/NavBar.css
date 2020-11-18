@@ -1,0 +1,46 @@
+/* -- Navigation Bar styles -- */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+    color: lightgrey;
+}
+
+#learnMore {
+    color: gold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7rem;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: slategray;
+    min-width: 160px;
+    padding: 12px 16px;
+}
+
+li {
+    margin-top: 2vh;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.navText {
+    text-decoration: none;
+    color: gold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7rem;
+}
+
+.navText:hover {
+    color: orangered;
+}
+
+.dropdown:hover #menu-content {
+    display: block;
+}

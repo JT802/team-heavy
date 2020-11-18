@@ -11,23 +11,3 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-
-/* -- Navigation Bar styles -- */
-
-.navigation {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 2rem 2rem 2rem 2rem;
-}
-
-.navText {
-  text-decoration: none;
-  color: gold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.7rem;
-}
-
-.navText:hover {
-  color: orangered;
-}
