@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-/* .WholePage {
+.WholePage {
   background-color: grey;
-  overflow-y: hidden;
-} */
+  overflow-x: hidden;
+  max-width:100vw;
+}
 .ButtonContainer {
   display: flex;
   width: 100vw;

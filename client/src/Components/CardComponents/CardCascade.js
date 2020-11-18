@@ -26,9 +26,8 @@ const styles = {
   card: {
     position: "absolute",
     top: "50%",
-    left: "50%",
-    height: "65%",
-    width: "50%",
+    height: "85%",
+    width: "65%",
     border: "5px solid white",
     boxSizing: "border-box",
     z_index:"20"

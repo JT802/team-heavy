@@ -10,13 +10,12 @@ const Background = styled.div`
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
-//   justify-content: right;
-//   align-items: right;
+
 `;
 //modal grid display
 const ModalWrapper = styled.div`
-  width: 30%;
-  height: 60%;
+  width: 50%;
+  height: 150%;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
   background: white;
   color: #000;
@@ -25,7 +24,8 @@ const ModalWrapper = styled.div`
   position: relative;
   z-index: 100;
   border-radius: 10px;
-  margin-right:-500%;
+  margin-left:65%;
+ 
 `;
 const ModalImage = styled.div`
   width: 100%;
@@ -69,7 +69,7 @@ const animation = useSpring({
     config: {
         duration: 250
     },
-    opacity: showModal ? 15 : 0,
+    opacity: showModal ? 1 : 0,
     transform: showModal ? `translateY(0%)` : `translateY(-100%)`
 });
   return (

@@ -49,7 +49,7 @@ export default class DeckCascade extends Component {
         //zIndex the cards, the cards on the left have the lowest zed index, so each sequential cards has a higher zed index by one each time
         new_zIndex = i;
         //scale the cards
-        new_scale = Math.pow(0.8, middle_card_by_index - i);
+        new_scale = Math.pow(0.85, middle_card_by_index - i);
       } else {
         //right side of the deck- center viewport
         //order the cards
@@ -60,12 +60,12 @@ export default class DeckCascade extends Component {
         //zIndex the cards, we need to mutiply by negative one here so the cards closer to the middle have a higher zed index, so they are in the forefront
         new_zIndex = i * -1.0;
         //scale the cards
-        new_scale = Math.pow(0.8, i - middle_card_by_index);
+        new_scale = Math.pow(0.85, i - middle_card_by_index);
       }
       //push to array
       new_cards.push(
         <Card
-          //   color={colors[i]}
+
           x={new_x}
           y={new_y}
           //puts middle card at highest zed index, if not middle card just equates to the zed index
@@ -226,9 +226,7 @@ const styles = {
   //alter height and width from pixels
   deck: {
     position: "absolute",
-    // top: "55%",
-    // left: "50%",
-    transform: "translate(120%, 50%)",
+    transform: "translate(35%, 60%)",
     height: "55vh",
     width: "40vw",
    
