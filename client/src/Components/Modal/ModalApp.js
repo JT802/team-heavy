@@ -3,7 +3,6 @@ import { Modal} from './Modal'
 // import "./modal.css"
 import styled from "styled-components";
 
-
 /*About the Photographer Button*/
 const StyledButton = styled.button `
     min-width: 100px;

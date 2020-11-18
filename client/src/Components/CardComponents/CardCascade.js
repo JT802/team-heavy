@@ -27,7 +27,6 @@ const styles = {
     position: "absolute",
     top: "50%",
     left: "50%",
-    transform: "translate(-50%, -50%)",
     height: "65%",
     width: "50%",
     border: "5px solid white",

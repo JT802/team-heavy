@@ -226,12 +226,12 @@ const styles = {
   //alter height and width from pixels
   deck: {
     position: "absolute",
-    top: "55%",
-    left: "50%",
-    // transform: "translate(-50%, -50%)",
+    // top: "55%",
+    // left: "50%",
+    transform: "translate(120%, 50%)",
     height: "55vh",
     width: "40vw",
-    // backgroundColor: "green",
+   
   },
   ButtonContainer: {
     display: "flex",
