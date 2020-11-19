@@ -10,11 +10,10 @@ const Background = styled.div`
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
-
 `;
 //modal grid display
 const ModalWrapper = styled.div`
-  width: 35%;
+  width: 50%;
   height: 100%;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
   background: white;
@@ -24,8 +23,7 @@ const ModalWrapper = styled.div`
   position: relative;
   z-index: 100;
   border-radius: 10px;
-  margin-left:65%;
- 
+  margin-left: 65%;
 `;
 //not importing
 const ModalImage = styled.div`
@@ -69,6 +67,7 @@ const Name = styled.h1`
 
 //Not using this pop down animation but when I comment it out it breaks my code so leaving for now, no effect might come back to it
 export const Modal = ({ showModal, setShowModal }) => {
+<<<<<<< HEAD
     const modalRef = useRef()
 //animation with use Spring for model, 250 ms duration
 const animation = useSpring({
@@ -101,16 +100,32 @@ useEffect(() => {
   return() => document.removeEventListener('keydown', keyPress)
 }, [keyPress])
 
+=======
+  const modalRef = useRef();
+
+  const animation = useSpring({
+    config: {
+      duration: 250,
+    },
+    opacity: showModal ? 1 : 0,
+    transform: showModal ? `translateY(0%)` : `translateY(-100%)`,
+  });
+>>>>>>> 12a10a6240d763baf6dc65b18b1831a57156545d
   return (
     <>
-    {/*If show modal, then render rest of the content */}
+      {/*If show modal, then render rest of the content */}
       {showModal ? (
         //if background clicked modal closes
         <Background ref = {modalRef} onClick = {closeModal}>
           <animated.div style = {animation}>
           <ModalWrapper showModal={showModal}>
+<<<<<<< HEAD
                  {/*import image*/}
             <ModalImage src= "../../images/Tim-Snow.jpg" alt="camera">
+=======
+            {/*import image*/}
+            <ModalImage src={require("../../images/image.png")} alt="camera">
+>>>>>>> 12a10a6240d763baf6dc65b18b1831a57156545d
               <ModalContent>
                 <Name>Tim Snow </Name>
                 <Text>
@@ -122,7 +137,7 @@ useEffect(() => {
                 </Text>
                 <button> Contact</button>
               </ModalContent>
-               {/*Come back to close button*/}
+              {/*Come back to close button*/}
               <CloseButton
                 aria-label="close modal"
                 onClick={() => setShowModal((prev) => !prev)}
@@ -134,4 +149,4 @@ useEffect(() => {
       ) : null}
     </>
   );
-      };
+};

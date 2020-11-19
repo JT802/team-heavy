@@ -33,13 +33,8 @@ function Homepage() {
       </div>
 
       <p className="info">242 Main Interactive</p>
-      {/* <h5 className="poster-header">Touch Here For Posters</h5> */}
-      {/* bringing in Big Heavy World logo */}
-      {/* <img id="BHW" src={BHW3} alt="BHW Image" /> */}
-      {/* divs for parallex css effect */}
       <Link id="link" to="/HorizontalCarousel">
         <div id="parallax-wrapper-bottom">
-          {/* <h5>Touch Posters on Kiosk to go to Posters Section</h5> */}
           <div className="parallax-footer"></div>
           <div className="posters-text">242 Main Posters</div>
         </div>

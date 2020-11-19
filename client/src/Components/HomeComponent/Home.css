@@ -1,9 +1,15 @@
 /* styling for the touch screen landing page */
 body {
-  text-align: center;
+  /* text-align: center; */
   background-image: url("../../images/BHWDoor.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+p {
+  margin-top: 18vh;
+  display: flex;
+  align-self: center;
 }
 
 #header-wrapper {
@@ -18,24 +24,6 @@ body {
   color: white;
   text-decoration: none;
 }
-
-/* .headshot {
-	flex-shrink: 0;
-	margin: 20px;
-	height: calc(150px + 6vw);
-	width: calc(150px + 6vw);
-	border: calc(8px + 0.2vw) solid transparent;
-	background-origin: border-box;
-	background-clip: content-box, border-box;
-	background-size: cover;
-	box-sizing: border-box;
-	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
-}
-
-.headshot-1 {
-	border-radius: 30%;
-	background-image: var(--img-url), linear-gradient(#f9f047, #0fd850);
-} */
 
 #BH {
   flex-shrink: 0;
@@ -57,7 +45,7 @@ body {
   transform: translate(-50%, -50%);
   font-family: sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 20px;
+  font-size: 120%;
 }
 
 #Tim-Snow {
@@ -79,7 +67,7 @@ body {
   transform: translate(-50%, -50%);
   font-family: sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 14px;
+  font-size: 90%;
 }
 
 #BHW {
@@ -102,16 +90,8 @@ body {
   transform: translate(-50%, -50%);
   font-family: sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 15px;
+  font-size: 100%;
 }
-
-/* Big Heavy World logo styling*/
-/* #BHW {
-  z-index: 1;
-  opacity: 1;
-  height: 30vw;
-  width: 30vw;
-} */
 
 /* text styling with a blur animation that blinks*/
 .info {
@@ -140,25 +120,6 @@ body {
   }
 }
 
-/* .poster-header {
-  margin-top: 13vh;
-  text-transform: uppercase;
-  font-size: 15px;
-  text-align: center;
-  font-weight: 800;
-  font-family: sans-serif;
-  color: black;
-  border-bottom: 5px ridge black;
-  animation: blur 1.2s ease-out infinite;
-  text-decoration: none;
-} */
-
-@keyframes blur {
-  from {
-    text-shadow: 0px 0px 10px white, 0px 0px 20px white, 0px 0px 30px white,
-      0px 0px 40px white, 0px 0px 50px white;
-  }
-}
 /* styling text on landing page so link isn'y underlined after click */
 #link {
   text-decoration: none;
@@ -170,43 +131,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 100vh;
+  height: 50vh;
 }
 /* container for the parallax scrolling effect */
-/* #parallax-wrapper-top {
-  z-index: 1;
-  display: flex;
-  height: 30vh;
-  overflow: hidden;
-  width: 100vw;
-  align-items: flex-end;
-} */
 
 /* parallax effect for posters, scrolls across bottom */
-/* .parallax-header {
-  display: flex;
-  flex-direction: row;
-  z-index: -1;
-  height: 20vh;
-  width: 100%;
-  background-image: url("../../images/Headshots.png");
-  background-repeat: repeat-x;
-  background-size: auto 100%;
-  background-position: top;
-  animation: 50s para infinite linear;
-}
-
-@keyframes para {
-  100% {
-    background-position: -1000px 10%;
-  }
-} */
 
 #parallax-wrapper-bottom {
   z-index: 1;
   display: flex;
   flex-direction: row;
-  height: 30vh;
+  height: 27.9vh;
   overflow: hidden;
   width: 100vw;
   align-items: flex-end;
@@ -216,7 +151,7 @@ body {
   display: flex;
   flex-direction: row;
   z-index: -1;
-  height: 20vh;
+  height: 26vh;
   width: 100%;
   background-image: url("../../images/Posters6.png");
   background-repeat: repeat-x;
@@ -226,7 +161,7 @@ body {
 
 @keyframes para {
   100% {
-    background-position: -1000px 10%;
+    background-position: -1000px 20%;
   }
 }
 
@@ -239,50 +174,3 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 40px;
 }
-
-/* :root {
-    --shadow-color: purple;
-    --shadow-color-light: black;
-  }
-  
-  .info {
-    text-transform: uppercase;
-    font-size: 25px;
-    text-align: center;
-    font-weight: 200;
-    letter-spacing: 3px;
-    color: antiquewhite;
-    animation: neon 1s infinite;
-  }
-  
-  @keyframes neon {
-    0% {
-      text-shadow: -1px -1px 1px var(--shadow-color-light),
-        -1px 1px 1px var(--shadow-color-light),
-        1px -1px 1px var(--shadow-color-light),
-        1px 1px 1px var(--shadow-color-light), 0 0 30px var(--shadow-color),
-        0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color),
-        0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color),
-        0 0 200px var(--shadow-color);
-    }
-    50% {
-      text-shadow: -1px -1px 1px var(--shadow-color-light),
-        -1px 1px 1px var(--shadow-color-light),
-        1px -1px 1px var(--shadow-color-light),
-        1px 1px 1px var(--shadow-color-light), 0 0 5px var(--shadow-color),
-        0 0 15px var(--shadow-color), 0 0 25px var(--shadow-color),
-        0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color),
-        0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color),
-        0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
-    }
-    100% {
-      text-shadow: -1px -1px 1px var(--shadow-color-light),
-        -1px 1px 1px var(--shadow-color-light),
-        1px -1px 1px var(--shadow-color-light),
-        1px 1px 1px var(--shadow-color-light), 0 0 3px var(--shadow-color),
-        0 0 10px var(--shadow-color), 0 0 20px var(--shadow-color),
-        0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color),
-        0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color),
-        0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
-    }
-  } */
