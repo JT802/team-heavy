@@ -3,7 +3,6 @@
 .about-page {
     display: flex;
     flex-direction: column;
-    /*flex-wrap: nowrap;*/
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
@@ -11,11 +10,13 @@
 }
 
 .about-page>p {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     color: gold;
-    width: 50vw;
+    line-height: 2;
+    width: 55vw;
 }
