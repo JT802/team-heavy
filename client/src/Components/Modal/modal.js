@@ -1,6 +1,6 @@
-import React, { useRef, useEffect, useCallback} from "react";
-import {useSpring, animated} from  'react-spring'
-import "../../images/image.png"
+import React, { useRef, useEffect, useCallback } from "react";
+import { useSpring, animated } from "react-spring";
+import "../../images/image.png";
 // import "./modal.css"
 import styled from "styled-components";
 
@@ -10,12 +10,11 @@ const Background = styled.div`
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
-
 `;
 //modal grid display
 const ModalWrapper = styled.div`
   width: 50%;
-  height: 150%;
+  height: 100%;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
   background: white;
   color: #000;
@@ -24,8 +23,7 @@ const ModalWrapper = styled.div`
   position: relative;
   z-index: 100;
   border-radius: 10px;
-  margin-left:65%;
- 
+  margin-left: 65%;
 `;
 const ModalImage = styled.div`
   width: 100%;
@@ -36,10 +34,10 @@ const ModalImage = styled.div`
 const CloseButton = styled.div`
   cursor: pointer;
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 32px;
-  height: 32px;
+  top: 20%;
+  right: 2vw;
+  width: 15vw;
+  height: 15vh;
   padding: 0;
   z-index: 10;
 `;
@@ -63,22 +61,22 @@ const Name = styled.h1`
 
 //Not using this pop down animation but when I comment it out it breaks my code so leaving for now, no effect might come back to it
 export const Modal = ({ showModal, setShowModal }) => {
-    const modalRef = useRef()
+  const modalRef = useRef();
 
-const animation = useSpring({
+  const animation = useSpring({
     config: {
-        duration: 250
+      duration: 250,
     },
     opacity: showModal ? 1 : 0,
-    transform: showModal ? `translateY(0%)` : `translateY(-100%)`
-});
+    transform: showModal ? `translateY(0%)` : `translateY(-100%)`,
+  });
   return (
     <>
-    {/*If show modal, then render rest of the content */}
+      {/*If show modal, then render rest of the content */}
       {showModal ? (
         <Background>
           <ModalWrapper showModal={showModal}>
-                 {/*import image*/}
+            {/*import image*/}
             <ModalImage src={require("../../images/image.png")} alt="camera">
               <ModalContent>
                 <Name>Tim Snow </Name>
@@ -91,7 +89,7 @@ const animation = useSpring({
                 </Text>
                 <button> Contact</button>
               </ModalContent>
-               {/*Come back to close button*/}
+              {/*Come back to close button*/}
               <CloseButton
                 aria-label="close modal"
                 onClick={() => setShowModal((prev) => !prev)}
@@ -102,4 +100,4 @@ const animation = useSpring({
       ) : null}
     </>
   );
-      };
+};
