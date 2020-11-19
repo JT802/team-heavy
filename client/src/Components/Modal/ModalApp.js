@@ -1,12 +1,11 @@
 import React, { useState} from 'react';
 import { Modal} from './Modal'
-// import "./modal.css"
 import styled from "styled-components";
 
 /*About the Photographer Button*/
 const StyledButton = styled.button `
-    min-width: 100px;
-    padding: 16px 32px;
+    min-width: 15vw;
+    padding: 2vh 2vw;
     border-radius: 4px;
     border:none;
     background: black;
