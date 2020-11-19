@@ -37,7 +37,7 @@ export default class DeckCascade extends Component {
 
     //for loop pushing images and other properties into new cards
     //9 is total number of cards, as long as less than total create a card
-    for (let i = 0; i < 22; i++) {
+    for (let i = 0; i < 20; i++) {
       //here  we are telling the computer which side of the center image/card we are on
       if (i < middle_card_by_index) {
         //left side of the deck
@@ -200,11 +200,11 @@ export default class DeckCascade extends Component {
       
       <div className="WholePage">
         <div>
-          <h1>Tim Snow Photography: The Last Show</h1>
+          <h1>”Photographs of The ‘Final’ 242 Main Concert, 2016 by Tim Snow”</h1>
         </div>
         <div className="ButtonContainer">
-          <button onClick={this.handle_previous}>Previous</button>
-          <button onClick={this.handle_next}>Next</button>
+          <button onClick={this.handle_previous}>Previous Photo</button>
+          <button onClick={this.handle_next}>Next Photo</button>
         </div>
         <div className="ImageSlider">
           <div ref={(ref_id) => (this.deck = ref_id)} style={styles.deck}>
