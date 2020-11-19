@@ -6,6 +6,8 @@ function Card(props) {
         <div style={styles.card}>
            { /*takes card component based on card number because props*/}
            <img style={styles.image} src ={props.card_number} alt="image"/>
+            <h3>{props.text}</h3>
+            <p style={styles.date}>{props.date}</p>
         </div>
     )
 }
@@ -21,10 +23,16 @@ const styles = {
     },
     image: {
         width:'98%',
-        height: '100%',
+        height: '80%',
         boxShadow: '10px 10px 8px black',
         marginLeft:'30px'
 
+    },
+    text: {
+        color: "yellow"
+    },
+    date: {
+        color: "yellow"
     }
 }
 //enables react to not render elements that do not need to be rerendered

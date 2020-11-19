@@ -30,7 +30,7 @@ const styles = {
     width: "65%",
     border: "5px solid white",
     boxSizing: "border-box",
-    z_index:"20"
+    z_index:"10"
   },
   image: {
     width: '100%',
