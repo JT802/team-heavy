@@ -24,7 +24,7 @@ function NavBar() {
                 <li><Link className="navText" to="/About">About 242 Main</Link></li>
                 <li><Link className="navText" to="/DeckCascade">Concert Photos by Tim Snow</Link></li>
                 <li><Link className="navText" to="/HorizontalCarousel">Concert Posters</Link></li>
-                <li><Link className="navText" to="/index">Interviews</Link></li>
+                <li><Link className="navText" to="/BrentCarousel">Interviews</Link></li>
                 {/* The "About" text will change when Jim sends us the specifics. */}
             </div>
         </nav>

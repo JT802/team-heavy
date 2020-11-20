@@ -1,3 +1,7 @@
-.video{
+.is-hidden{
     display:none;
+}
+
+.pdf-wrapper{
+    height:100%
 }
