@@ -76,11 +76,11 @@ const animation = useSpring({
 
 //if a click is performed outside of the modal wrapper it closes modal
 //currently not responding
-const closeModal = e => {
-  if(modalRef.current === e.target) {
-    setShowModal(false)
-  }
-}
+// const closeModal = e => {
+//   if(modalRef.current === e.target) {
+//     setShowModal(false)
+//   }
+// }
 
 const keyPress = useCallback (e => {
   //if the escape key is pressed and the modal is open/ set show modal to false(close Modal)
@@ -100,8 +100,8 @@ useEffect(() => {
     <>
       {/*If show modal, then render rest of the content */}
       {showModal ? (
-        //if background clicked modal closes
-        <Background ref = {modalRef} onClick = {closeModal}>
+        //if background clicked modal closes-onClick = {closeModal}
+        <Background ref = {modalRef}>
           <animated.div style = {animation}>
           <ModalWrapper showModal={showModal}>
                  {/*import image*/}

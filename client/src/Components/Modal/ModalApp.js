@@ -12,10 +12,11 @@ const StyledButton = styled.button`
   color: white;
   font-size: 24px;
   cursor: pointer;
-  
-  margin-bottom: 8rem;
+  margin-left:70vw;
+  margin-bottom: 5vh;
 `;
-
+//Modal open and close function using state
+//About the photographer is a button that holds the modal, on click runs openModal function, openModal toggles setShowModal and showModal 
 export default function ModalApp() {
   const [showModal, setShowModal] = useState(false);
 

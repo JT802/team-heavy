@@ -140,7 +140,6 @@ export default class HorizontalCarousel extends Component {
             <Card card_number="https://omeka.bigheavyworld.com/files/original/25df5bb6d08ffab9c14f5772ad134a5f.png" text = "Sub Zero at 242" alt = "poster"></Card>
             <Card card_number="https://omeka.bigheavyworld.com/files/original/1555130a590603cce342abd953331524.png" text = "Texas Is the Reason at 242" alt = "poster"></Card>
             <Card card_number="https://omeka.bigheavyworld.com/files/original/e50ec8ac745071694599074fd3abc4ef.png" text = "Bene-Fest" alt = "poster"></Card>
-            
             <Card card_number="https://omeka.bigheavyworld.com/files/original/0f4e26577611887a4c2287514940b919.png" text = "Dub Narcotic Sound System at 242" alt = "poster"></Card>
             <Card card_number="https://omeka.bigheavyworld.com/files/original/99b8bcc843380089ef9d31a2c875ab51.png" text = "Sheer Terror at 242" alt = "poster"></Card>
             <Card card_number="https://omeka.bigheavyworld.com/files/original/cb3c2f5860c1db84759982522fce62ea.png" text = "Execute at 242" alt = "poster"></Card>
@@ -173,9 +172,5 @@ const styles = {
     flexDirection: "row",
     width: "fit-content",
   },
-  Previous_Button: {
-    display: "flex",
-    width: "15vw",
-    paddingRight: "5vw",
-  },
+
 };
