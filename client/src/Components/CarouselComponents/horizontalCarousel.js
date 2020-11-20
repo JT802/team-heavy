@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Card from "../CardComponents/Card.js";
-import "./Carousel.css";
+import "./HorizontalCarousel.css";
 
 export default class HorizontalCarousel extends Component {
   constructor(props) {
@@ -119,16 +119,32 @@ export default class HorizontalCarousel extends Component {
             style={styles.card_container}
           >
             {/*Card Image Components, can fill these how we like */}
-            {/* <Card card_number=" https://omeka.bigheavyworld.com/files/original/98c5dd94467b09101342b858a275e26b.jpg" /> */}
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/ab677b4452224e18d40221c2ebb32651.jpg" />
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/1b9cf23df2d30086913a8e82c1adad8c.jpg" />
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/fbd2849c3eb1dfb403e7ba6f8f53ebbc.jpg" />
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/31372a662168cddf3bcd04d22bce7196.jpg" />
-            <Card card_number=" https://omeka.bigheavyworld.com/files/original/98c5dd94467b09101342b858a275e26b.jpg" />
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/ab677b4452224e18d40221c2ebb32651.jpg" />
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/1b9cf23df2d30086913a8e82c1adad8c.jpg" />
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/fbd2849c3eb1dfb403e7ba6f8f53ebbc.jpg" />
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/31372a662168cddf3bcd04d22bce7196.jpg" />
+            
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/c7b54519fcbc85ee03d08300a845bb89.jpg "text = "Molotov Solution & Man Overboard at 242"alt = "poster"> </Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/d19c4c649535ca080b5999a1b3ce3e34.jpg" text = "Slush at 242"alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/7883743d66a4a6772cba732c967806eb.jpg"text = "Screaming Broccoli at 242"alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/899169f28ab7c602aab953b192ded851.png" text = "Sparrows at 242"alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/082e001e3dc2a3519a6f3ca4c5d270bb.jpg"text = "New Years Punk/Hardcore Fest '98 at 242"alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/5f6663f0ceaace6368a99b04f07ae3fe.png" text = "Warzone at 242"alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/7eafb5ffb841eb9f97ffa93d510d5dbe.png" text = "Envy at 242"  alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/da425bc903aec5a3f0d15fbfd73d91a9.png" text = "Save Ends at 242" alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/5faf2db1a217b16174e22dccff69d755.png" text = "Reverser at 242"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/2de85b50e013392b3c94d483e839c2e7.png" text = "Radiator Hospital at 242"></Card>
+             <Card card_number="https://omeka.bigheavyworld.com/files/original/e7a22db55caced638eb874f19ff9c3ec.png" text = "Brass Tactics at 242" alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/ae2cae6fcd736cfdc1534dfcd7640670.png" text = "Joyce Manor at 242" alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/26682a2c76a895acd2a8db77c07a7438.png" text = "Outlast at 242" alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/c87078b2b6b677bc5befc7567e1af649.png" text = "Madball at 242" alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/8461fa4c4f09534e34ab87f111a41e82.png" text = "Shift at 242" alt = "poster"></Card>
+             <Card card_number="https://omeka.bigheavyworld.com/files/original/917f91498326107edec28cd0b0392a37.png" text = "Grit at 242" alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/bb8c74aafd2ef0f75db6ab131b2dd188.png" text = "The Queers at 242" alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/25df5bb6d08ffab9c14f5772ad134a5f.png" text = "Sub Zero at 242" alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/1555130a590603cce342abd953331524.png" text = "Texas Is the Reason at 242" alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/e50ec8ac745071694599074fd3abc4ef.png" text = "Bene-Fest" alt = "poster"></Card>
+            
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/0f4e26577611887a4c2287514940b919.png" text = "Dub Narcotic Sound System at 242" alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/99b8bcc843380089ef9d31a2c875ab51.png" text = "Sheer Terror at 242" alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/cb3c2f5860c1db84759982522fce62ea.png" text = "Execute at 242" alt = "poster"></Card>
+            <Card card_number="https://omeka.bigheavyworld.com/files/original/7f68d2a1ac1b33f26c9d95ff1d34c682.png" text = "Warzone & 7 Seconds at 242" alt = "poster"></Card>
           </div>
         </div>
       </div>
@@ -145,10 +161,10 @@ const styles = {
     top: "50%",
     left: "50%",
     //so it's center
-    transform: "translate(-50%, -50%)",
-    height: "auto",
+    transform: "translate(-50%, -40%)",
+    height: "80vh",
     width: "60vw",
-    paddingLeft: "50px",
+    paddingLeft: "5%",
     overflow: "hidden",
   },
   //flex container for carousel
@@ -159,7 +175,7 @@ const styles = {
   },
   Previous_Button: {
     display: "flex",
-    width: "40px",
-    paddingRight: "10px",
+    width: "15vw",
+    paddingRight: "5vw",
   },
 };

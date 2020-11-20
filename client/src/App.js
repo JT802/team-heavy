@@ -1,20 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/HomeComponent/Homepage.js";
 import HorizontalCarousel from "./Components/CarouselComponents/HorizontalCarousel";
-import SecondCarousel from "./Components/CarouselComponents/SecondCarousel";
 import BrentCarousel from "./Components/BrentCarousel";
-import DeckCascade, { Deck } from "./Components/CarouselComponents/DeckCascade"
+import DeckCascade from "./Components/CarouselComponents/DeckCascade";
+import About from "./Components/AboutComponent/About";
+import NavBar from "./Components/NavBarComponent/NavBar";
+import "./App.css";
+
 function App() {
   return (
-    <div id="main-wrapper">
+    // -- NavBar can persist across pages -- //
+    <div>
       <Router>
+        <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/HorizontalCarousel" component={HorizontalCarousel}></Route>
-          <Route path="/SecondCarousel" component={SecondCarousel}></Route>
-          <Route path="/BrentCarousel" component={BrentCarousel}></Route>
-          <Route path="/DeckCascade" component = {DeckCascade}></Route>
+          <Route path="/HorizontalCarousel" component={HorizontalCarousel} />
+          <Route path="/BrentCarousel" component={BrentCarousel} />
+          <Route path="/DeckCascade" component={DeckCascade} />
+          <Route path="/About" component={About} />
         </Switch>
       </Router>
     </div>

@@ -1,0 +1,22 @@
+/* -- About Page styles -- */
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.about-page>p {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: gold;
+    line-height: 2;
+    width: 55vw;
+}

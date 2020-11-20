@@ -6,29 +6,33 @@ function Card(props) {
         <div style={styles.card}>
            { /*takes card component based on card number because props*/}
            <img style={styles.image} src ={props.card_number} alt="image"/>
+            <h3>{props.text}</h3>
+            <p style={styles.date}>{props.date}</p>
         </div>
     )
 }
 //card styles
 const styles = {
     card: {
-        width: '30vw',
-        height: '40vh',
+        width: '35vw',
+        height: '55vh',
         backgroundColor: 'white',
-        // border: '1px solid black',
         boxSizing: 'border-box',
         fontSize: '2.5em',
         border:"2px solid white"
- 
-        // paddingLeft:'30px',
-        // paddingRight:'30px'
     },
     image: {
         width:'98%',
-        height: '100%',
+        height: '80%',
         boxShadow: '10px 10px 8px black',
         marginLeft:'30px'
 
+    },
+    text: {
+        color: "yellow"
+    },
+    date: {
+        color: "yellow"
     }
 }
 //enables react to not render elements that do not need to be rerendered
