@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Modal } from "./odal";
+import { Modal } from "./Modal";
 import styled from "styled-components";
 
 /*About the Photographer Button*/
