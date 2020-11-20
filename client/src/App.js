@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/HomeComponent/Homepage.js";
-import HorizontalCarousel from "./Components/CarouselComponents/orizontalCarousel";
+import HorizontalCarousel from "./Components/CarouselComponents/HorizontalCarousel";
 import BrentCarousel from "./Components/BrentCarousel";
 import DeckCascade from "./Components/CarouselComponents/DeckCascade";
 import About from "./Components/AboutComponent/About";
