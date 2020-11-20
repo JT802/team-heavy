@@ -104,11 +104,11 @@ export default class HorizontalCarousel extends Component {
             style={styles.button}
             onClick={this.handle_previous}
           >
-            Previous
+            Previous Posters
           </button>
           {/* Next Button handles next function on click*/}
           <button className="nextButton" onClick={this.handle_next}>
-            Next
+            Next Posters
           </button>
         </div>
         {/*Div with viewport takes style from styles.view port*/}

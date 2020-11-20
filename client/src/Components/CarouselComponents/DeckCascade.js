@@ -37,7 +37,7 @@ export default class DeckCascade extends Component {
 
     //for loop pushing images and other properties into new cards
     //9 is total number of cards, as long as less than total create a card
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 18; i++) {
       //here  we are telling the computer which side of the center image/card we are on
       if (i < middle_card_by_index) {
         //left side of the deck
@@ -45,22 +45,22 @@ export default class DeckCascade extends Component {
         new_x = center.x - 300 * (middle_card_by_index - i);
         new_y = center.y;
         //cascade the cards, on the left side, and were moving the cards to the right, so its newx plus
-        new_x = new_x + 0.33 * 300 * (middle_card_by_index - i);
+        new_x = new_x + 0.5 * 300 * (middle_card_by_index - i);
         //zIndex the cards, the cards on the left have the lowest zed index, so each sequential cards has a higher zed index by one each time
         new_zIndex = i;
         //scale the cards
-        new_scale = Math.pow(0.85, middle_card_by_index - i);
+        new_scale = Math.pow(0.9, middle_card_by_index - i);
       } else {
         //right side of the deck- center viewport
         //order the cards
         new_x = center.x + 300 * (i - middle_card_by_index);
         new_y = center.y;
         //cascade the cards, the cards are one third over from eachother, overlapping
-        new_x = new_x - 0.33 * 300 * (i - middle_card_by_index);
+        new_x = new_x - 0.50 * 300 * (i - middle_card_by_index);
         //zIndex the cards, we need to mutiply by negative one here so the cards closer to the middle have a higher zed index, so they are in the forefront
         new_zIndex = i * -1.0;
         //scale the cards
-        new_scale = Math.pow(0.85, i - middle_card_by_index);
+        new_scale = Math.pow(0.9, i - middle_card_by_index);
       }
       //push to array
       new_cards.push(
@@ -109,7 +109,7 @@ export default class DeckCascade extends Component {
       }
 
       //special case, looping from the far left, behind the cards, to pop out on the right side
-      this.deck.children[0].style.transitionDuration = "0.5s";
+      this.deck.children[0].style.transitionDuration = "0.2s";
       //scale of 0 so the card shrinks out while transitioning, cleaner look
       this.deck.children[0].style.transform = `translate(-50%, -50%) scale(0)`;
       //this timeout is of the correct timing of popping the card from the left to right side, when the left side cards have shifted over, about one second (700)
@@ -147,7 +147,7 @@ export default class DeckCascade extends Component {
 
       for (let i = 0; i < this.deck.children.length - 1; i++) {
         //whatever card we are on, we're transitioning one over, so the properties must equal the properties of the card plus 1, take on the properties of the next card in the array
-        this.deck.children[i].style.transitionDuration = "1s";
+        this.deck.children[i].style.transitionDuration = ".5s";
         this.deck.children[i].style.left = this.deck.children[i + 1].style.left;
         this.deck.children[i].style.zIndex = this.deck.children[
           i + 1
@@ -226,9 +226,9 @@ const styles = {
   //alter height and width from pixels
   deck: {
     position: "absolute",
-    transform: "translate(35%, 60%)",
+    transform: "translate(60%, 60%)",
     height: "55vh",
-    width: "40vw",
+    width: "60vw",
    
   },
   ButtonContainer: {

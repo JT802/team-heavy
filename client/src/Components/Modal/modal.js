@@ -35,13 +35,10 @@ const ModalImage = styled.div`
 //x close icon top right
 const CloseButton = styled(AiOutlineClose)`
   cursor: pointer;
-  position: absolute;
-  top: 1.5vh;
-  right: 1vw;
-  width:2vw;
-  height: 2vh;
-  padding: 0;
-  z-index: 10;
+  width: 5vw;
+  height 5vh;
+  
+ 
 `;
 //line height text direction
 const ModalContent = styled.div`
