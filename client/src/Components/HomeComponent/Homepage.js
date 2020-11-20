@@ -14,7 +14,7 @@ function Homepage() {
 
     <div id="homepage-wrapper">
       <div id="header-wrapper">
-        <Link id="link" to="/index">
+        <Link id="link" to="/BrentCarousel">
           <div className="interviews">
             <img id="BH" src={BH} alt="Interviews" />
             <div className="interview-text">Interviews</div>
@@ -26,10 +26,12 @@ function Homepage() {
             <div className="tim-snow-text">Tim Snow Photography</div>
           </div>
         </Link>
-        <div className="about">
-          <img id="BHW" src={BHW} alt="BHW Image" />
-          <div className="about-text">About Page</div>
-        </div>
+        <Link id="link" to="/About">
+          <div className="about">
+            <img id="BHW" src={BHW} alt="BHW Image" />
+            <div className="about-text">About Page</div>
+          </div>
+        </Link>
       </div>
 
       <p className="info">242 Main Interactive</p>

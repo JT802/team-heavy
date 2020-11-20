@@ -1,7 +1,8 @@
 /* styling for the touch screen landing page */
 body {
   /* text-align: center; */
-  background-image: url("../../images/BHWDoor.png");
+  background-image: url("../../images/BHWDoor2.png");
+  background-blend-mode: color-burn;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -115,8 +116,8 @@ p {
 
 @keyframes blur {
   from {
-    text-shadow: 0px 0px 10px white, 0px 0px 20px white, 0px 0px 30px white,
-      0px 0px 40px white, 0px 0px 50px white;
+    text-shadow: 0px 0px 10px white, 0px 0px 20px black, 0px 0px 30px black,
+      0px 0px 40px black, 0px 0px 50px black;
   }
 }
 
@@ -161,7 +162,7 @@ p {
 
 @keyframes para {
   100% {
-    background-position: -1000px 20%;
+    background-position: -1500px 20%;
   }
 }
 
