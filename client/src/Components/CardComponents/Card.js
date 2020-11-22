@@ -14,31 +14,32 @@ function Card(props) {
 //card styles
 const styles = {
     card: {
+        display: 'flex',
+        flexDirection:'column',
         width: '35vw',
         height: '55vh',
         backgroundColor: 'black',
         boxSizing: 'border-box',
         fontSize: '2.5em',
-        border:"2px solid white"
+        border:"2px solid yellow"
     },
     image: {
-        width:'98%',
-        height: '80%',
+        width:'40%',
+        height: '75%',
         boxShadow: '10px 10px 8px black',
-        marginLeft:'30px'
+        marginLeft:'30%',
+        marginTop:"3%"
 
     },
     //under poster 
     text: {
-        color: "white",
+        color: "yellow",
         fontWeight: '1000',
         textShadow: '5px',
         textAlign: 'center'
     
     },
-    // date: {
-    //     color: "yellow"
-    // }
+
 }
 //enables react to not render elements that do not need to be rerendered
 export default React.memo(Card)

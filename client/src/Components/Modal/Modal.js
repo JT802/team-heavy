@@ -7,23 +7,21 @@ import {AiOutlineClose} from "react-icons/ai"
 //styles for components
 const Background = styled.div`
   width: 100%;
-  height: 100%;
+  height: 75rem;
+  z-index:100;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
 `;
 //modal grid display
 const ModalWrapper = styled.div`
-  width: 50%;
+  width: 100%;
   height: 100%;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
   background: white;
   color: #000;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   position: relative;
   z-index: 100;
   border-radius: 10px;
-  margin-left: 65%;
 `;
 //not importing
 const ModalImage = styled.div`
@@ -32,13 +30,12 @@ const ModalImage = styled.div`
   border-radius: 10px 0 0 10px;
   
 `;
-//x close icon top right
+//x close icon top left
 const CloseButton = styled(AiOutlineClose)`
   cursor: pointer;
   width: 5vw;
   height 5vh;
   
- 
 `;
 //line height text direction
 const ModalContent = styled.div`
@@ -46,20 +43,19 @@ const ModalContent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 1.8;
+  line-height: 1.5;
   color: black;
 `;
 //modal text
 const Text = styled.p`
   font-size: 25px;
   color: black;
-  margin-left:9vw;
-  min-width:20vw;
+  max-width:50%;
 `;
 const Name = styled.h1`
   font-size: 45px;
   color: black;
-  margin-left:10vw;
+  margin-left:5vw;
 `;
 
 //Not using this pop down animation but when I comment it out it breaks my code so leaving for now, no effect might come back to it
@@ -109,11 +105,7 @@ useEffect(() => {
               <ModalContent>
                 <Name>Tim Snow </Name>
                 <Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean blandit orci ac lacinia luctus. Etiam sed nisi non
-                  tellus tempor porta. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Aenean blandit orci ac lacinia luctus. Etiam
-                  sed nisi non tellus tempor porta.
+                Tim Snow is a Montreal based photojournalist and photography educator. He took these images at the “final” 242 Main concert on December 3, 2016. 242 Main is located in the basement of Memorial Auditorium; when the building became unsafe, the city closed 242 Main and other programs. 22 bands performed at this concert to celebrate 242 Main, and Big Heavy World began the years-long advocacy that would ensure youth-led music would emerge in the space again. Find more of Tim's images at timsnowphotography.com. Tim can be contacted by email at tim@timsnowphotography.com or at 514-238-4529.
                 </Text>
                 <button> Contact</button>
               </ModalContent>
