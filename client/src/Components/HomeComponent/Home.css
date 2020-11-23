@@ -1,158 +1,143 @@
 /* styling for the touch screen landing page */
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
 body {
-  /* text-align: center; */
   background-image: url("../../images/BHWDoor2.png");
-  background-blend-mode: color-burn;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 p {
-  margin-top: 18vh;
-  display: flex;
   align-self: center;
+}
+
+#homepage-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  z-index: -10;
 }
 
 #header-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 20vh;
   width: 100%;
   padding-top: 2vh;
   position: relative;
   text-align: center;
   color: white;
   text-decoration: none;
+  z-index: 1;
+}
+
+#parallax-wrapper {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  height: 41vh;
+  width: 100vw;
+  align-items: flex-end;
+  z-index: 1;
 }
 
 #BH {
   flex-shrink: 0;
-  height: 30vh;
-  width: 15vw;
-  border: 10px solid transparent;
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  background-size: cover;
-  box-sizing: border-box;
-  box-shadow: 0 0 10px 10px rgba(255, 217, 0, 0.5);
+  height: 35vh;
+  width: 20vw;
+  border: 5% solid transparent;
+  box-shadow: 0 0 0.8vh 0.8vw rgba(255, 217, 0, 0.5);
   border-radius: 30%;
+  margin-bottom: 4vh;
 }
 
 .interview-text {
   position: absolute;
-  top: 125%;
+  top: 80%;
   left: 17%;
   transform: translate(-50%, -50%);
-  font-family: sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 120%;
+  font-size: 150%;
 }
 
 #Tim-Snow {
-  height: 30vh;
-  width: 15vw;
-  border: 10px solid transparent;
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  background-size: cover;
-  box-sizing: border-box;
-  box-shadow: 0 0 10px 10px rgba(255, 217, 0, 0.5);
+  height: 35vh;
+  width: 20vw;
+  border: 5% solid transparent;
+  box-shadow: 0 0 0.8vh 0.8vw rgba(255, 217, 0, 0.5);
   border-radius: 30%;
+  margin-bottom: 4vh;
 }
 
 .tim-snow-text {
   position: absolute;
-  top: 125%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 90%;
+  font-size: 100%;
 }
 
 #BHW {
-  height: 30vh;
-  width: 15vw;
-  border: 10px solid transparent;
-  background-color: black;
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  background-size: cover;
-  box-sizing: border-box;
-  box-shadow: 0 0 10px 10px rgba(255, 217, 0, 0.5);
+  height: 35vh;
+  width: 20vw;
+  border: 5% solid transparent;
+  box-shadow: 0 0 0.8vh 0.8vw rgba(255, 217, 0, 0.5);
   border-radius: 30%;
+  margin-bottom: 4vh;
 }
 
 .about-text {
   position: absolute;
-  top: 125%;
+  top: 80%;
   left: 83.5%;
   transform: translate(-50%, -50%);
-  font-family: sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 100%;
+  font-size: 150%;
 }
 
 /* text styling with a blur animation that blinks*/
 .info {
   text-transform: uppercase;
-  font-size: 75px;
+  font-size: 2rem;
   text-align: center;
   font-weight: 1000;
-  font-family: sans-serif;
+  font-family: "Oswald", sans-serif;
   color: goldenrod;
-  border: 10px solid transparent;
+  border: 5% solid transparent;
   background-color: rgba(0, 0, 0, 0.5);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  background-size: cover;
-  box-sizing: border-box;
-  box-shadow: 0 0 5px 5px rgba(255, 217, 0, 0.5);
-  border-radius: 20%;
+  box-shadow: 0 0 0.5vh 0.5vw rgba(255, 217, 0, 0.5);
+  border-radius: 40%;
   animation: blur 1.2s ease-out infinite;
-  text-decoration: none;
 }
 
 @keyframes blur {
   from {
-    text-shadow: 0px 0px 10px white, 0px 0px 20px black, 0px 0px 30px black,
-      0px 0px 40px black, 0px 0px 50px black;
+    text-shadow: 0px 0px 10px goldenrod, 0px 0px 20px goldenrod,
+      0px 0px 30px goldenrod, 0px 0px 40px goldenrod, 0px 0px 50px goldenrod;
   }
 }
 
 /* styling text on landing page so link isn'y underlined after click */
 #link {
   text-decoration: none;
-  color: whitesmoke;
+  color: goldenrod;
 }
 
-#homepage-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 50vh;
-}
 /* container for the parallax scrolling effect */
 
 /* parallax effect for posters, scrolls across bottom */
 
-#parallax-wrapper-bottom {
-  z-index: 1;
-  display: flex;
-  flex-direction: row;
-  height: 27.9vh;
-  overflow: hidden;
-  width: 100vw;
-  align-items: flex-end;
-}
-
 .parallax-footer {
   display: flex;
   flex-direction: row;
+  position: sticky;
   z-index: -1;
-  height: 26vh;
+  height: 40vh;
   width: 100%;
   background-image: url("../../images/Posters6.png");
   background-repeat: repeat-x;
@@ -171,7 +156,7 @@ p {
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 40px;
+  font-size: 500%;
 }

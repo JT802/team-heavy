@@ -4,6 +4,8 @@ import "./DeckCascade.css";
 //react arrows
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import {AiOutlineArrowRight} from "react-icons/ai";
+import NavBar from "../NavBarComponent/NavBar";
+
 
 //Images from ImageArray-Tim Snow
 import { imagepaths } from "./ImageArray";
@@ -200,6 +202,9 @@ export default class DeckCascade extends Component {
   render() {
     //so we can reference the deck
     return (
+
+      <div>
+        <NavBar/>
       
       <div className="WholePage">
         <div>
@@ -220,6 +225,7 @@ export default class DeckCascade extends Component {
           <button><AiOutlineArrowRight id="next" onClick={this.handle_next}></AiOutlineArrowRight></button>
           </div>
           
+      </div>
       </div>
     );
   }
