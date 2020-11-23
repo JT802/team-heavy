@@ -1,7 +1,6 @@
 //imports
 import React from "react";
 import "./Home.css";
-import BHW3 from "../../images/3DLight.jpg";
 import { Link } from "react-router-dom";
 import BH from "../../images/BH.jpg";
 import TimSnow from "../../images/Tim-Snow.jpg";
