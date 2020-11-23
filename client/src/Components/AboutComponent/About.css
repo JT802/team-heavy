@@ -1,16 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 /* -- About Page styles -- */
 
 p {
     background-color: rgba(0, 0, 0, 0.3);
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Rubrik', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
     text-align: justify;
     color: gold;
     line-height: 2;
     width: 52vw;
+}
+
+#about-title {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-page {

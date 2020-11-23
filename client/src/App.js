@@ -6,20 +6,24 @@ import BrentCarousel from "./Components/BrentCarousel";
 import DeckCascade from "./Components/CarouselComponents/DeckCascade";
 import About from "./Components/AboutComponent/About";
 import NavBar from "./Components/NavBarComponent/NavBar";
+import Information from "./Components/InformationComponent/Information";
+import InfoLink from "./Components/InformationComponent/InfoLink";
 import "./App.css";
 
 function App() {
   return (
-    // -- NavBar can persist across pages -- //
+    // -- NavBar persists across pages -- //
     <div>
       <Router>
         <NavBar />
+        <InfoLink />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/HorizontalCarousel" component={HorizontalCarousel} />
           <Route path="/BrentCarousel" component={BrentCarousel} />
           <Route path="/DeckCascade" component={DeckCascade} />
           <Route path="/About" component={About} />
+          <Route path="/Information" component={Information} />
         </Switch>
       </Router>
     </div>
