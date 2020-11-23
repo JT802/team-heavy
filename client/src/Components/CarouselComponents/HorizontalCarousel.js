@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Card from "../CardComponents/Card.js";
 import "./HorizontalCarousel.css";
+import { AiOutlineArrowLeft } from "react-icons/ai";
+import {AiOutlineArrowRight} from "react-icons/ai";
 
 export default class HorizontalCarousel extends Component {
   constructor(props) {
@@ -41,7 +43,7 @@ export default class HorizontalCarousel extends Component {
       this.setState({ current_card: new_current_card }, () => {
         this.card_container.style.transitionDuration = "0.5s";
         this.card_container.style.transform = `translate(-${
-          30.5 * this.state.current_card
+          36.5 * this.state.current_card
         }vw)`;
         //if at the last card then transition back to the first card
         if (
@@ -51,7 +53,7 @@ export default class HorizontalCarousel extends Component {
           setTimeout(() => {
             //animation for card movement
             this.card_container.style.transitionDuration = "0.5s";
-            this.card_container.style.transform = `translate(-${30.5}vw)`;
+            this.card_container.style.transform = `translate(-${36.5}vw)`;
             //need to set state here to 1 to reset
             this.setState({ current_card: 1 });
           }, 502);
@@ -72,14 +74,14 @@ export default class HorizontalCarousel extends Component {
       this.setState({ current_card: new_current_card }, () => {
         this.card_container.style.transitionDuration = "0.5s";
         this.card_container.style.transform = `translate(-${
-          30.5 * this.state.current_card
+          36.5 * this.state.current_card
         }vw)`;
 
         if (this.state.current_Card === 0) {
           setTimeout(() => {
             this.card_container.style.transitionDuration = "0.5s";
             this.card_container.style.transform = `translate(-${
-              30.5 * (this.card_container.children.length - 2)
+              36.5 * (this.card_container.children.length - 2)
             }vw`;
             //need to set state here to 1 to reset
             this.setState({
@@ -99,17 +101,9 @@ export default class HorizontalCarousel extends Component {
       <div>
         <div className="buttonBox">
           {/* Previous Button handles previous on click*/}
-          <button
-            className="previousButton"
-            style={styles.button}
-            onClick={this.handle_previous}
-          >
-            Previous Posters
-          </button>
+          <button> <AiOutlineArrowLeft className="previousButton"style={styles.button} onClick={this.handle_previous}> </AiOutlineArrowLeft></button>
           {/* Next Button handles next function on click*/}
-          <button className="nextButton" onClick={this.handle_next}>
-            Next Posters
-          </button>
+          <button><AiOutlineArrowRight className="nextButton" onClick={this.handle_next}></AiOutlineArrowRight></button>
         </div>
         {/*Div with viewport takes style from styles.view port*/}
         <div className="view-port" style={styles.view_port}>
@@ -275,7 +269,7 @@ const styles = {
     //so it's center
     transform: "translate(-50%, -40%)",
     height: "80vh",
-    width: "60vw",
+    width: "70vw",
     paddingLeft: "5%",
     overflow: "hidden",
   },

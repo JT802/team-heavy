@@ -7,8 +7,8 @@ import {AiOutlineClose} from "react-icons/ai"
 //styles for components
 const Background = styled.div`
   width: 100%;
-  height: 75rem;
-  z-index:100;
+  height: 65vh;
+  z-index:10;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
 `;
@@ -19,17 +19,11 @@ const ModalWrapper = styled.div`
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
   background: white;
   color: #000;
-  position: relative;
-  z-index: 100;
+  z-index: 1;
   border-radius: 10px;
 `;
 //not importing
-const ModalImage = styled.div`
-  width: 100%;
-  height: 100%;
-  border-radius: 10px 0 0 10px;
-  
-`;
+
 //x close icon top left
 const CloseButton = styled(AiOutlineClose)`
   cursor: pointer;
@@ -50,7 +44,7 @@ const ModalContent = styled.div`
 const Text = styled.p`
   font-size: 25px;
   color: black;
-  max-width:50%;
+  max-width:65%;
 `;
 const Name = styled.h1`
   font-size: 45px;
@@ -101,20 +95,19 @@ useEffect(() => {
           <animated.div style = {animation}>
           <ModalWrapper showModal={showModal}>
                  {/*import image*/}
-            <ModalImage src= "../../images/Tim-Snow.jpg" alt="camera">
+            {/* <ModalImage src= "../../images/Tim-Snow.jpg" alt="camera"> */}
               <ModalContent>
+              <CloseButton
+                aria-label="close modal"
+                onClick={() => setShowModal((prev) => !prev)}
+              ></CloseButton>
                 <Name>Tim Snow </Name>
                 <Text>
                 Tim Snow is a Montreal based photojournalist and photography educator. He took these images at the “final” 242 Main concert on December 3, 2016. 242 Main is located in the basement of Memorial Auditorium; when the building became unsafe, the city closed 242 Main and other programs. 22 bands performed at this concert to celebrate 242 Main, and Big Heavy World began the years-long advocacy that would ensure youth-led music would emerge in the space again. Find more of Tim's images at timsnowphotography.com. Tim can be contacted by email at tim@timsnowphotography.com or at 514-238-4529.
                 </Text>
                 <button> Contact</button>
               </ModalContent>
-              {/*Come back to close button*/}
-              <CloseButton
-                aria-label="close modal"
-                onClick={() => setShowModal((prev) => !prev)}
-              ></CloseButton>
-           </ModalImage>
+           {/* </ModalImage> */}
           </ModalWrapper>
           </animated.div>
         </Background>

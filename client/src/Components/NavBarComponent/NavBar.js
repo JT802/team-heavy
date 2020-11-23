@@ -25,7 +25,7 @@ function NavBar() {
                 <li onClick={dropdownHandler}><Link className="navText" to="/DeckCascade">Concert Photos by Tim Snow</Link></li>
                 <li onClick={dropdownHandler}><Link className="navText" to="/HorizontalCarousel">Concert Posters</Link></li>
                 <li onClick={dropdownHandler}><Link className="navText" to="/BrentCarousel">Interviews</Link></li>
-                {/* The "About" text will change when Jim sends us the specifics. */}
+                
             </div>
         </nav>
     )

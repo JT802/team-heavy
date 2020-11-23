@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Card from "../CardComponents/CardCascade";
 import "./DeckCascade.css";
+//react arrows
+import { AiOutlineArrowLeft } from "react-icons/ai";
+import {AiOutlineArrowRight} from "react-icons/ai";
 
 //Images from ImageArray-Tim Snow
 import { imagepaths } from "./ImageArray";
@@ -37,7 +40,7 @@ export default class DeckCascade extends Component {
 
     //for loop pushing images and other properties into new cards
     //9 is total number of cards, as long as less than total create a card
-    for (let i = 0; i < 18; i++) {
+    for (let i = 0; i < 22; i++) {
       //here  we are telling the computer which side of the center image/card we are on
       if (i < middle_card_by_index) {
         //left side of the deck
@@ -202,19 +205,21 @@ export default class DeckCascade extends Component {
         <div>
           <h1>”Photographs of The ‘Final’ 242 Main Concert, 2016 by Tim Snow”</h1>
         </div>
-        <div className="ButtonContainer">
-          <button onClick={this.handle_previous}>Previous Photo</button>
-          <button onClick={this.handle_next}>Next Photo</button>
-        </div>
+        {/*Modal Display */}
+        <ModalApp />
+        
         <div className="ImageSlider">
           <div ref={(ref_id) => (this.deck = ref_id)} style={styles.deck}>
             {/* using the newcards */}
             {this.state.cards}
           </div>
-          <div className= "ModalButton">
-          <ModalApp />
           </div>
-        </div>
+          {/* Arrows in Container */}
+          <div style = {styles.ButtonContainer}>
+          <button><AiOutlineArrowLeft id="previous"onClick={this.handle_previous}></AiOutlineArrowLeft></button>
+          <button><AiOutlineArrowRight id="next" onClick={this.handle_next}></AiOutlineArrowRight></button>
+          </div>
+          
       </div>
     );
   }
@@ -223,18 +228,20 @@ export default class DeckCascade extends Component {
 const styles = {
   //image deck styling, the deck holds the cards or images
   //transform puts it truly in the center of the page
-  //alter height and width from pixels
+
   deck: {
-    position: "absolute",
-    transform: "translate(60%, 60%)",
+    transform: "translate(95%, 50%)",
     height: "55vh",
-    width: "60vw",
+    width: "50vw",
+  
    
   },
+  //container for previous and next buttons
   ButtonContainer: {
     display: "flex",
     width: "100%",
-    justifyContent: "space-between",
+    marginTop:"5vh",
+    justifyContent: "space-evenly",
   },
 };
 

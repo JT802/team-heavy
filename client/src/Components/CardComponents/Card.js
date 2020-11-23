@@ -21,7 +21,7 @@ const styles = {
         backgroundColor: 'black',
         boxSizing: 'border-box',
         fontSize: '2.5em',
-        border:"2px solid yellow"
+        border:"2px solid goldenrod"
     },
     image: {
         width:'60%',
@@ -33,7 +33,7 @@ const styles = {
     },
     //under poster 
     text: {
-        color: "yellow",
+        color: "goldenrod",
         fontWeight: '1000',
         textShadow: '5px',
         textAlign: 'center'
