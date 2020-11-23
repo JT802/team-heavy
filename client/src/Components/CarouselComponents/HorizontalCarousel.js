@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Card from "../CardComponents/Card.js";
 import "./HorizontalCarousel.css";
+import NavBar from "../NavBarComponent/NavBar";
+
 
 export default class HorizontalCarousel extends Component {
   constructor(props) {
@@ -96,6 +98,8 @@ export default class HorizontalCarousel extends Component {
 
   render() {
     return (
+      <div>
+        <NavBar/>
       <div>
         <div className="buttonBox">
           {/* Previous Button handles previous on click*/}
@@ -259,6 +263,7 @@ export default class HorizontalCarousel extends Component {
 <Card card_number="https://omeka.bigheavyworld.com/files/fullsize/f3a2d9d9dbb46c010ea823afa432f49f.jpg" text="My Revenge" alt="poster"> </Card>
           </div>
         </div>
+      </div>
       </div>
     );
   }
