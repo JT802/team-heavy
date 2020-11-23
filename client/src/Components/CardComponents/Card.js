@@ -24,10 +24,10 @@ const styles = {
         border:"2px solid yellow"
     },
     image: {
-        width:'40%',
+        width:'60%',
         height: '75%',
         boxShadow: '10px 10px 8px black',
-        marginLeft:'30%',
+        marginLeft:'20%',
         marginTop:"3%"
 
     },
