@@ -8,6 +8,7 @@ function Information() {
       <NavBar />
       <div className="information-page">
         <p id="information-title">About Big Heavy World</p>
+        {/* The text below is sourced from the BIg Heavy World website. */}
         <p className="information-body">
           Big Heavy World, established in 1996, deploys the internet, radio, and
           other technologies to bring expanded awareness of Vermont made music.
