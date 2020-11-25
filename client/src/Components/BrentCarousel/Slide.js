@@ -3,7 +3,8 @@ import ReactDOM from "react-dom";
 import ReactPlayer from "react-player";
 import ReactAudioPlayer from "react-audio-player";
 import screenfull from "screenfull";
-import Modal from "react-modal"
+import Modal from "react-modal";
+import "./Brentcarousel.css";
 export default function Slide({ imageSrc, videoSrc, textSrc, interviewSrc }) {
   //save video ref to play video onclick
   const videoref = useRef();
@@ -18,9 +19,12 @@ export default function Slide({ imageSrc, videoSrc, textSrc, interviewSrc }) {
   };
   return (
     <div>
-      <img src={imageSrc} />
+      <div className="smallerImg">
+      <img src={imageSrc}  />
+      </div>
       <div className="legend">
-        <button
+        <button 
+        className="buttonSmall"
           onClick={() => {
             //play video and then put it fullscreen and set play state to be true
             setplayState(true);
@@ -28,16 +32,16 @@ export default function Slide({ imageSrc, videoSrc, textSrc, interviewSrc }) {
             screenfull.on("change", fullScreenHandler);
           }}
         >
-          Watch Interview
+          Watch Interview clip
         </button>
         <button
+        className="buttonSmall"
           onClick={() => {
             //play video and then put it fullscreen and set play state to be true
             setAudioPlayState(true);
-           
           }}
         >
-          Listen to Full Interview
+          Listen to Full Interview with transcript
         </button>
         <div className={playState ? "" : "is-hidden"}>
           <ReactPlayer
@@ -55,7 +59,7 @@ export default function Slide({ imageSrc, videoSrc, textSrc, interviewSrc }) {
             src={interviewSrc}
           />
           <div className="pdf-wrapper">
-          <iframe src={textSrc} width="100%" height="100%"></iframe>
+            <iframe src={textSrc} width="100%" height="100%"></iframe>
           </div>
         </Modal>
       </div>
