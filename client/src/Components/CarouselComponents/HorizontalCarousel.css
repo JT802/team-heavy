@@ -4,19 +4,18 @@
   height: 15vh;
   background-color: black;
   font-weight: 900;
-  color: goldenrod;
+  color: gold;
   cursor: pointer;
   border-radius: 5%;
-  
- 
 }
+
 .nextButton{
   position:relative;
   width: auto;
   height: 15vh;
   background-color: black;
   font-weight: 900;
-  color: goldenrod;
+  color: gold;
   cursor: pointer;
   border-radius: 5%;
 

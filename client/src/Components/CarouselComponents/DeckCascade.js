@@ -205,7 +205,7 @@ export default class DeckCascade extends Component {
         <NavBar/>
       <div className="WholePage">
         <div>
-          <h1>”Photographs of The ‘Final’ 242 Main Concert, 2016 by Tim Snow”</h1>
+          <h1>Photographs of The ‘Final’ 242 Main Concert, 2016 by Tim Snow</h1>
         </div>
         {/*Modal Display */}
         <ModalApp />

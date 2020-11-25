@@ -4,7 +4,7 @@ import "./HorizontalCarousel.css";
 import NavBar from "../NavBarComponent/NavBar";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import {AiOutlineArrowRight} from "react-icons/ai";
-import { useSwipeable} from "react-swipeable"
+
 // import { config } from "dotenv/types";
 
 
@@ -278,6 +278,7 @@ const styles = {
   card_container: {
     display: "flex",
     flexDirection: "row",
-    width: "fit-content",
+    width: "auto",
+    height:'auto'
   },
 };

@@ -4,13 +4,14 @@ import styled from "styled-components";
 
 /*About the Photographer Button*/
 const StyledButton = styled.button`
+font-family: 'Oswald', sans-serif;
   min-width: 15vw;
   padding: 2vh 2vw;
   border-radius: 4px;
   border: none;
   background: black;
-  color: goldenrod;
-  font-size: 24px;
+  color: gold;
+  font-size: 2rem;
   cursor: pointer;
   margin-left:70vw;
   margin-bottom: 5vh;

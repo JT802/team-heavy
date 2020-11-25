@@ -16,9 +16,8 @@ const Background = styled.div`
 //modal grid display
 const ModalWrapper = styled.div`
   width: 150%;
-  height: 100%;
+  height: 150%;
   box-shadow: 0 5px 16px;
-  background: goldenrod;
   color: #000;
   z-index: 1;
   border-radius: 10px;
@@ -36,7 +35,6 @@ const CloseButton = styled(AiOutlineClose)`
 //line height text direction
 const ModalContent = styled.div`
   display: flex;
- 
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -45,13 +43,13 @@ const ModalContent = styled.div`
 `;
 //modal text
 const Text = styled.p`
-  font-size: 23px;
-  color: black;
+  font-size: 1.8rem;
+  color: gold;
   max-width:100%;
 `;
 const Name = styled.h1`
-  font-size: 45px;
-  color: black;
+  font-size: 3.5rem;
+  color: gold;
   margin-left:5vw;
 `;
 
