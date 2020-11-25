@@ -1,18 +1,31 @@
-.buttonBox {
-  display: flex;
-  justify-content: space-evenly;
-  width: 80vw;
-  margin-top: 3%;
+/*Previous and Next Buttons*/
+.previousButton{
+  width: auto;
+  height: 15vh;
+  background-color: black;
+  font-weight: 900;
+  color: goldenrod;
+  cursor: pointer;
+  border-radius: 5%;
+  
+ 
+}
+.nextButton{
+  position:relative;
+  width: auto;
+  height: 15vh;
+  background-color: black;
+  font-weight: 900;
+  color: goldenrod;
+  cursor: pointer;
+  border-radius: 5%;
+
+}
+/*Button flex container*/
+.buttonContainerPoster {
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  margin-top: 5vh;
 }
 
-.previousButton,
-.nextButton {
-  width: 15vw;
-  height: 10vh;
-  text-align: center;
-  font-weight: 900;
-  font-size: 30px;
-  border: 2px solid black;
-  padding: 0;
-  margin-left: 25vw;
-}

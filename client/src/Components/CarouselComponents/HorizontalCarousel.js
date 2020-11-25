@@ -4,6 +4,9 @@ import "./HorizontalCarousel.css";
 import NavBar from "../NavBarComponent/NavBar";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import {AiOutlineArrowRight} from "react-icons/ai";
+import { useSwipeable} from "react-swipeable"
+// import { config } from "dotenv/types";
+
 
 export default class HorizontalCarousel extends Component {
   constructor(props) {
@@ -96,54 +99,44 @@ export default class HorizontalCarousel extends Component {
       return;
     }
   };
-
   render() {
     return (
       <div>
         <NavBar/>
       <div>
-        <div className="buttonBox">
-          {/* Previous Button handles previous on click*/}
-          <button> <AiOutlineArrowLeft className="previousButton"style={styles.button} onClick={this.handle_previous}> </AiOutlineArrowLeft></button>
-          {/* Next Button handles next function on click*/}
-          <button><AiOutlineArrowRight className="nextButton" onClick={this.handle_next}></AiOutlineArrowRight></button>
-        </div>
-        {/*Div with viewport takes style from styles.view port*/}
+  {/*Div with viewport takes style from styles.view port*/}
         <div className="view-port" style={styles.view_port}>
           <div
             ref={(ref_id) => (this.card_container = ref_id)}
             className="card-container"
             style={styles.card_container}
           >
-            {/*Card Image Components, can fill these how we like */}
-            
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/c7b54519fcbc85ee03d08300a845bb89.jpg "text = "Molotov Solution & Man Overboard"alt = "poster"> </Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/d19c4c649535ca080b5999a1b3ce3e34.jpg" text = "Slush"alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/7883743d66a4a6772cba732c967806eb.jpg"text = "Screaming Broccoli"alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/899169f28ab7c602aab953b192ded851.png" text = "Sparrows"alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/082e001e3dc2a3519a6f3ca4c5d270bb.jpg"text = "New Years Punk/Hardcore Fest '98 "alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/5f6663f0ceaace6368a99b04f07ae3fe.png" text = "Warzone"alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/7eafb5ffb841eb9f97ffa93d510d5dbe.png" text = "Envy "  alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/da425bc903aec5a3f0d15fbfd73d91a9.png" text = "Save Ends" alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/5faf2db1a217b16174e22dccff69d755.png" text = "Reverser "></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/2de85b50e013392b3c94d483e839c2e7.png" text = "Radiator Hospital "></Card>
-             <Card card_number="https://omeka.bigheavyworld.com/files/original/e7a22db55caced638eb874f19ff9c3ec.png" text = "Brass Tactics" alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/ae2cae6fcd736cfdc1534dfcd7640670.png" text = "Joyce Manor " alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/26682a2c76a895acd2a8db77c07a7438.png" text = "Outlast" alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/c87078b2b6b677bc5befc7567e1af649.png" text = "Madball " alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/8461fa4c4f09534e34ab87f111a41e82.png" text = "Shift " alt = "poster"></Card>
-             <Card card_number="https://omeka.bigheavyworld.com/files/original/917f91498326107edec28cd0b0392a37.png" text = "Grit " alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/bb8c74aafd2ef0f75db6ab131b2dd188.png" text = "The Queers " alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/25df5bb6d08ffab9c14f5772ad134a5f.png" text = "Sub Zero " alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/1555130a590603cce342abd953331524.png" text = "Texas Is the Reason" alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/e50ec8ac745071694599074fd3abc4ef.png" text = "Bene-Fest" alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/0f4e26577611887a4c2287514940b919.png" text = "Dub Narcotic Sound System " alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/99b8bcc843380089ef9d31a2c875ab51.png" text = "Sheer Terror" alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/cb3c2f5860c1db84759982522fce62ea.png" text = "Execute" alt = "poster"></Card>
-            <Card card_number="https://omeka.bigheavyworld.com/files/original/7f68d2a1ac1b33f26c9d95ff1d34c682.png" text = "Warzone & 7 Seconds" alt = "poster"></Card>
-          
-          
-            <Card card_number="https://omeka.bigheavyworld.com/files/fullsize/51923f516d0b38cd3aa51bcc1b91971c.jpg" text="Never Again" alt="poster"> </Card>,
+   {/*Card Image Components*/}
+<Card card_number="https://omeka.bigheavyworld.com/files/original/c7b54519fcbc85ee03d08300a845bb89.jpg "text = "Molotov Solution & Man Overboard"alt = "poster"> </Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/d19c4c649535ca080b5999a1b3ce3e34.jpg" text = "Slush"alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/7883743d66a4a6772cba732c967806eb.jpg"text = "Screaming Broccoli"alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/899169f28ab7c602aab953b192ded851.png" text = "Sparrows"alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/082e001e3dc2a3519a6f3ca4c5d270bb.jpg"text = "New Years Punk/Hardcore Fest '98 "alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/5f6663f0ceaace6368a99b04f07ae3fe.png" text = "Warzone"alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/7eafb5ffb841eb9f97ffa93d510d5dbe.png" text = "Envy "  alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/da425bc903aec5a3f0d15fbfd73d91a9.png" text = "Save Ends" alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/5faf2db1a217b16174e22dccff69d755.png" text = "Reverser "></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/2de85b50e013392b3c94d483e839c2e7.png" text = "Radiator Hospital "></Card>
+ <Card card_number="https://omeka.bigheavyworld.com/files/original/e7a22db55caced638eb874f19ff9c3ec.png" text = "Brass Tactics" alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/ae2cae6fcd736cfdc1534dfcd7640670.png" text = "Joyce Manor " alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/26682a2c76a895acd2a8db77c07a7438.png" text = "Outlast" alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/c87078b2b6b677bc5befc7567e1af649.png" text = "Madball " alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/8461fa4c4f09534e34ab87f111a41e82.png" text = "Shift " alt = "poster"></Card>
+ <Card card_number="https://omeka.bigheavyworld.com/files/original/917f91498326107edec28cd0b0392a37.png" text = "Grit " alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/bb8c74aafd2ef0f75db6ab131b2dd188.png" text = "The Queers " alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/25df5bb6d08ffab9c14f5772ad134a5f.png" text = "Sub Zero " alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/1555130a590603cce342abd953331524.png" text = "Texas Is the Reason" alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/e50ec8ac745071694599074fd3abc4ef.png" text = "Bene-Fest" alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/0f4e26577611887a4c2287514940b919.png" text = "Dub Narcotic Sound System " alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/99b8bcc843380089ef9d31a2c875ab51.png" text = "Sheer Terror" alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/cb3c2f5860c1db84759982522fce62ea.png" text = "Execute" alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/original/7f68d2a1ac1b33f26c9d95ff1d34c682.png" text = "Warzone & 7 Seconds" alt = "poster"></Card>
+<Card card_number="https://omeka.bigheavyworld.com/files/fullsize/51923f516d0b38cd3aa51bcc1b91971c.jpg" text="Never Again" alt="poster"> </Card>,
 <Card card_number="https://omeka.bigheavyworld.com/files/fullsize/f7c367b260ee629ed083e9e40acb3d2a.jpg" text="Never Again" alt="poster"> </Card>,
 <Card card_number="https://omeka.bigheavyworld.com/files/fullsize/25b7747f7b02ef7336a51760102b2d6c.jpg" text="Give Up The Ghost" alt="poster"> </Card>,
 <Card card_number="https://omeka.bigheavyworld.com/files/fullsize/77febe20f1d46c541ef448e5b69db5a4.jpg" text="Fight Back" alt="poster"> </Card>,
@@ -254,7 +247,13 @@ export default class HorizontalCarousel extends Component {
 <Card card_number="https://omeka.bigheavyworld.com/files/fullsize/64ecd02f2152e8fb189ee8c8bd7410fc.jpg" text="Derive" alt="poster"> </Card>,
 <Card card_number="https://omeka.bigheavyworld.com/files/fullsize/aaac8656b7d2183878623f0b7f65b1e6.jpg" text="Rubrics" alt="poster"> </Card>,
 <Card card_number="https://omeka.bigheavyworld.com/files/fullsize/f3a2d9d9dbb46c010ea823afa432f49f.jpg" text="My Revenge" alt="poster"> </Card>
-          </div>
+</div>
+
+    {/* Previous Button handles previous on click*/}{/* Next Button handles next function on click*/}
+       <div className= "buttonContainerPoster">
+            <button> <AiOutlineArrowLeft className="previousButton"style={styles.button} onClick={this.handle_previous}> </AiOutlineArrowLeft></button>
+            <button><AiOutlineArrowRight className="nextButton" onClick={this.handle_next}></AiOutlineArrowRight></button>
+         </div>
         </div>
       </div>
       </div>
@@ -267,15 +266,13 @@ const styles = {
   view_port: {
     //center viewport
     //holds the slider position
-    position: "absolute",
-    top: "50%",
-    left: "50%",
     //so it's center
-    transform: "translate(-50%, -40%)",
+    transform: "translate(15%, 10%)",
     height: "80vh",
     width: "70vw",
     paddingLeft: "5%",
     overflow: "hidden",
+
   },
   //flex container for carousel
   card_container: {

@@ -32,6 +32,7 @@ const styles = {
     boxSizing: "border-box",
     z_index:"10"
   },
+  //photographs
   image: {
     width: '100%',
     height: '100%',

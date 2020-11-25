@@ -200,12 +200,9 @@ export default class DeckCascade extends Component {
   };
 
   render() {
-    //so we can reference the deck
     return (
-
       <div>
         <NavBar/>
-      
       <div className="WholePage">
         <div>
           <h1>”Photographs of The ‘Final’ 242 Main Concert, 2016 by Tim Snow”</h1>
@@ -224,7 +221,6 @@ export default class DeckCascade extends Component {
           <button><AiOutlineArrowLeft id="previous"onClick={this.handle_previous}></AiOutlineArrowLeft></button>
           <button><AiOutlineArrowRight id="next" onClick={this.handle_next}></AiOutlineArrowRight></button>
           </div>
-          
       </div>
       </div>
     );
@@ -232,16 +228,15 @@ export default class DeckCascade extends Component {
 }
 
 const styles = {
+
   //image deck styling, the deck holds the cards or images
   //transform puts it truly in the center of the page
-
   deck: {
     transform: "translate(95%, 50%)",
     height: "55vh",
     width: "50vw",
-  
-   
   },
+
   //container for previous and next buttons
   ButtonContainer: {
     display: "flex",
