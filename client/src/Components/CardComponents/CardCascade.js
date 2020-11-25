@@ -28,7 +28,7 @@ const styles = {
     top: "50%",
     height: "85%",
     width: "65%",
-    border: "5px solid white",
+    border: "3% solid white",
     boxSizing: "border-box",
     z_index:"10"
   },

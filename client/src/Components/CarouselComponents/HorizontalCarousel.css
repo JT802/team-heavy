@@ -1,4 +1,10 @@
 /*Previous and Next Buttons*/
+
+button {
+  margin:0;
+  padding:0;
+}
+
 .previousButton{
   width: auto;
   height: 15vh;

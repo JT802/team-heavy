@@ -6,7 +6,7 @@ function Card(props) {
         <div style={styles.card}>
            { /*takes card component based on card number because props*/}
            <img style={styles.image} src ={props.card_number} alt="image"/>
-            <h3 style = {styles.text}>{props.text}</h3>
+            <h4 style = {styles.text}>{props.text}</h4>
             <p style={styles.date}>{props.date}</p>
         </div>
     )
@@ -33,6 +33,7 @@ const styles = {
     },
     //under poster 
     text: {
+        fontSize:"90%",
         color: "gold",
         fontWeight: '1000',
         textShadow: '5px',

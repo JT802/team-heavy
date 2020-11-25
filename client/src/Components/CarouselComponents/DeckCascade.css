@@ -2,23 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
 .WholePage {
-  /* background-color: grey; */
-
   overflow-x: hidden;
-  max-width: 100vw;
 }
 
 h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 3.5rem;
   margin-top: 3%;
-  margin-left: 20vw;
+  margin-left: 18vw;
   color:gold;
   font-weight: 1000;
   text-shadow: 5px;
   text-transform: uppercase;
 }
-
+button{
+  margin:0;
+  padding:0;
+}
 #previous{
   width: auto;
   height: 10vh;
@@ -37,14 +37,12 @@ h1 {
   font-weight: 900;
   color: gold;
   cursor: pointer;
-  border-radius: 5%;
   padding:  1vw;
-  margin-top: 5%;
-  
+  padding:  1vw;
+  border-radius: 5%;
 }
 
 .ImageSlider{
-  margin-left: 0%;
   padding:0;
   overflow: hidden;
 }

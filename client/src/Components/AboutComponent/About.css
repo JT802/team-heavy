@@ -1,32 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
 /* -- About Page styles -- */
 
 p {
-    background-color: rgba(0, 0, 0, 0.3);
-    margin: 0;
-    padding: 0;
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: justify;
-    color: gold;
-    line-height: 2;
-    width: 52vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: justify;
+  color: gold;
+  line-height: 2;
+  width: 52vw;
 }
 
 #about-title {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }

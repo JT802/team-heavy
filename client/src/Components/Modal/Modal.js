@@ -17,12 +17,9 @@ const Background = styled.div`
 const ModalWrapper = styled.div`
   width: 150%;
   height: 150%;
-  box-shadow: 0 5px 16px;
   color: #000;
   z-index: 1;
-  border-radius: 10px;
 `;
-
 
 //x close icon top left
 const CloseButton = styled(AiOutlineClose)`
@@ -45,12 +42,13 @@ const ModalContent = styled.div`
 const Text = styled.p`
   font-size: 1.8rem;
   color: gold;
-  max-width:100%;
+  max-width:120%;
 `;
 const Name = styled.h1`
   font-size: 3.5rem;
   color: gold;
-  margin-left:5vw;
+  margin-left:1vw;
+  margin-top:-5vh;
 `;
 
 //Not using this pop down animation but when I comment it out it breaks my code so leaving for now, no effect might come back to it
@@ -96,7 +94,9 @@ useEffect(() => {
               <ModalContent>
                 <Name>Tim Snow </Name>
                 <Text>
-                Tim Snow is a Montreal based photojournalist and photography educator. He took these images at the “final” 242 Main concert on December 3, 2016. 242 Main is located in the basement of Memorial Auditorium; when the building became unsafe, the city closed 242 Main and other programs. 22 bands performed at this concert to celebrate 242 Main, and Big Heavy World began the years-long advocacy that would ensure youth-led music would emerge in the space again. Find more of Tim's images at timsnowphotography.com. Tim can be contacted by email at tim@timsnowphotography.com or at 514-238-4529.
+              Tim Snow is a Montreal based photojournalist and photography educator. He took these images at the “final” 242 Main concert on December 3, 2016. 
+              242 Main is located in the basement of Memorial Auditorium; when the building became unsafe, the city closed 242 Main and other programs. 22 bands performed at this concert to celebrate 242 Main, and Big Heavy World began the years-long advocacy that would ensure youth-led music would emerge in the space again. Find more of Tim's images at timsnowphotography.com. 
+              Tim can be contacted by email at tim@timsnowphotography.com or at 514-238-4529.
                 </Text>
               </ModalContent>
            {/* </ModalImage> */}
