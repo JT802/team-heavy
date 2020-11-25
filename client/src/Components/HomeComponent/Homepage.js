@@ -27,7 +27,7 @@ function Homepage() {
         </Link>
         <Link id="link" to="/About">
           <div className="about">
-            <img id="BHW" src={Door} alt="BHW Image" />
+            <img id="BHW" src={Door} alt="242 Main Door" />
             <div className="about-text">About 242 Main</div>
           </div>
         </Link>
@@ -37,7 +37,6 @@ function Homepage() {
       <Link id="link" to="/HorizontalCarousel">
         <div id="parallax-wrapper">
           <div className="parallax-footer"></div>
-          <div className="posters-text">242 Main Posters</div>
         </div>
       </Link>
     </div>
