@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import Card from "../CardComponents/Card.js";
 import "./HorizontalCarousel.css";
-import "../CardComponents/card.css"
+import "../CardComponents/card.css";
 import NavBar from "../NavBarComponent/NavBar";
 import { AiOutlineArrowLeft } from "react-icons/ai";
-import {AiOutlineArrowRight} from "react-icons/ai";
-
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default class HorizontalCarousel extends Component {
   constructor(props) {
@@ -111,7 +110,8 @@ export default class HorizontalCarousel extends Component {
               style={styles.card_container}
             >
               {/*Card Image Components*/}
-              <Card className= "Text"
+              <Card
+                className="Text"
                 card_number="https://omeka.bigheavyworld.com/files/original/c7b54519fcbc85ee03d08300a845bb89.jpg "
                 text="Molotov Solution & Man Overboard"
                 alt="poster"
@@ -1153,7 +1153,7 @@ const styles = {
     //center viewport
     //holds the slider position
     //so it's center
-    marginLeft:"7%",
+    marginLeft: "7%",
     height: "100vh",
     width: "70vw",
     paddingLeft: "5%",
@@ -1164,6 +1164,6 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     width: "auto",
-    height:'auto'
+    height: "auto",
   },
 };

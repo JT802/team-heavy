@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import NavBar from "../NavBarComponent/NavBar";
-
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import Slide from "./Slide";
@@ -11,7 +10,7 @@ export default function BrentCarousel() {
   const [playState, setplayState] = useState(false);
   return (
     <div>
-      <NavBar />
+      <div className="nav"><NavBar /></div>
       <Carousel
         renderThumbs={(children) => {
           return children.map((child) => {
