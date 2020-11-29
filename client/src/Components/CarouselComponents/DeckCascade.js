@@ -211,7 +211,7 @@ export default class DeckCascade extends Component {
         <ModalApp />
         
         <div className="ImageSlider">
-          <div ref={(ref_id) => (this.deck = ref_id)} style={styles.deck}>
+          <div className= "Deck"ref={(ref_id) => (this.deck = ref_id)} style={styles.deck}>
             {/* using the newcards */}
             {this.state.cards}
           </div>

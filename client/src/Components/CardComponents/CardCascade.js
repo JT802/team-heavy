@@ -1,4 +1,5 @@
 import React from "react";
+import "./card.css"
 
 function Card(props) {
   return (
@@ -13,7 +14,7 @@ function Card(props) {
         transform: `translate(-50%, -50%) scale(${props.scale})`,
       }}
     >
-      <img style={styles.image} src={props.images} alt='react slider'></img>
+      <img className="CascadeImage" src={props.images} alt='react slider'></img>
     
     </div>
   );
@@ -31,12 +32,6 @@ const styles = {
     border: "3% solid white",
     boxSizing: "border-box",
     z_index:"10"
-  },
-  //photographs
-  image: {
-    width: '100%',
-    height: '100%',
-    boxShadow: '10px 10px 8px black'
   }
 };
 

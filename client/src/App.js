@@ -5,7 +5,6 @@ import HorizontalCarousel from "./Components/CarouselComponents/HorizontalCarous
 import BrentCarousel from "./Components/BrentCarousel";
 import DeckCascade from "./Components/CarouselComponents/DeckCascade";
 import About from "./Components/AboutComponent/About";
-import NavBar from "./Components/NavBarComponent/NavBar";
 import Information from "./Components/InformationComponent/Information";
 import InfoLink from "./Components/InformationComponent/InfoLink";
 import "./App.css";
