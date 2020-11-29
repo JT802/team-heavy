@@ -14,7 +14,7 @@ function Card(props) {
         transform: `translate(-50%, -50%) scale(${props.scale})`,
       }}
     >
-      <img className="CascadeImage" src={props.images} alt="react slider"></img>
+      <img className="CascadeImage cardImage" src={props.images} alt="react slider"></img>
     </div>
   );
 }

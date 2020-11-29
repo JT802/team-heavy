@@ -1,31 +1,52 @@
-.is-hidden{
-    display:none;
+.is-hidden {
+  display: none;
 }
 
-.pdf-wrapper{
-    height:100%
+.pdf-wrapper {
+  height: 100%;
 }
 
-.smallerImg{
-    width:50vw;
-    margin:auto;
+.smallerImg {
+  width: 50vw;
+  margin: auto;
 }
 
 .carousel .slider-wrapper {
-    width:65%
+  width: 65%;
 }
 
-.buttonSmall{
-    height:40px;
-    font-size: 20px;
-    margin-right: 0;
-    margin:16px;
+.buttonSmall {
+  height: 40px;
+  font-size: 20px;
+  margin-right: 0;
+  margin: 16px;
+  color: gold;
+  font-family: "Oswald", sans-serif;
+  background-color: black;
 }
 
-.carousel-root{
-    margin-top:5%;
+.carousel-root {
+  padding-top: 5%;
 }
 
-.nav{
-    margin-top: 0%;
+.nav {
+  margin-top: 0%;
+}
+
+.carousel .thumb {
+    border:3px solid gold;
+  width: 120px !important;
+}
+
+.carousel .thumbs {
+  overflow: scroll;
+}
+
+.carousel .slide .legend {
+  background: transparent;
+}
+
+.carousel .carousel-status {
+  color: gold;
+  font-family: "Oswald", sans-serif;
 }

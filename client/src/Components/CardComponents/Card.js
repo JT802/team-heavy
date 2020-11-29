@@ -7,7 +7,7 @@ function Card(props) {
     <div className="Card">
       {/*takes card component based on card number because props*/}
       <h4 className="PosterText">{props.text}</h4>
-      <img src={props.card_number} alt="posters" />
+      <img className="cardImage" src={props.card_number} alt="posters" />
     </div>
   );
 }
