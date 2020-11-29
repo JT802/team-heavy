@@ -1,23 +1,26 @@
 /* styling for the touch screen landing page */
+
+/* importing google font "Oswald" */
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
+/* set the background to an image of 242 main, to be displayed across all pages */
 body {
   background-image: url("../../images/BHWDoor2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* aligning all p tags to have centered text */
 p {
   align-self: center;
 }
-
+/* setting the entire homepage to a flex display, z-index set to -10 to push the wrapper to the back */
 #homepage-wrapper {
   display: flex;
   flex-direction: column;
   height: 100%;
   z-index: -10;
 }
-
+/* styled the images so they space evenly across top of the page, slight padding above & below */
 #header-wrapper {
   display: flex;
   flex-direction: row;
@@ -31,7 +34,7 @@ p {
   text-decoration: none;
   z-index: 1;
 }
-
+/* styled scrolling images on bottom to a certain height, hidden overflow to eliminate side scroll */
 #parallax-wrapper {
   z-index: 1;
   display: flex;
@@ -42,14 +45,14 @@ p {
   align-items: flex-end;
   z-index: 1;
 }
-
+/* Interview gif, styled with a box shadow to give a halo-like appearance around image, border radius rounds the image slightly */
 #BH {
   height: 40vh;
   width: 25vw;
   box-shadow: 0 0 0.8vh 0.8vw rgba(255, 217, 0, 0.5);
   border-radius: 5%;
 }
-
+/* styled text with imported Oswald font, transformed to all uppercase, positioned on top of image */
 .interview-text {
   position: absolute;
   top: 85%;
@@ -60,14 +63,14 @@ p {
   font-size: 150%;
   text-transform: uppercase;
 }
-
+/* tim snow photo, styled with a box shadow to give a halo-like appearance around image, border radius rounds the image slightly */
 #Tim-Snow {
   height: 40vh;
   width: 25vw;
   box-shadow: 0 0 0.8vh 0.8vw rgba(255, 217, 0, 0.5);
   border-radius: 5%;
 }
-
+/* styled text with imported Oswald font, transformed to all uppercase, positioned on top of image */
 .tim-snow-text {
   position: absolute;
   top: 85%;
@@ -78,14 +81,14 @@ p {
   font-size: 150%;
   text-transform: uppercase;
 }
-
+/* 242 main door photo, styled with a box shadow to give a halo-like appearance around image, border radius rounds the image slightly */
 #BHW {
   height: 40vh;
   width: 25vw;
   box-shadow: 0 0 0.8vh 0.8vw rgba(255, 217, 0, 0.5);
   border-radius: 5%;
 }
-
+/* styled text with imported Oswald font, transformed to all uppercase, positioned on top of image */
 .about-text {
   position: absolute;
   top: 85%;
@@ -97,7 +100,7 @@ p {
   text-transform: uppercase;
 }
 
-/* text styling with a blur animation that blinks*/
+/* text styling with a blur animation that flashes*/
 .info {
   text-transform: uppercase;
   font-size: 4rem;
@@ -110,7 +113,7 @@ p {
   border-radius: 20%;
   animation: blur 1.2s ease-out infinite;
 }
-
+/* animation for the blur effect, multiple text shadows with increasingly larger pixels makes the effect larger */
 @keyframes blur {
   from {
     text-shadow: 0px 0px 10px gold, 0px 0px 20px gold, 0px 0px 30px gold,
@@ -118,13 +121,13 @@ p {
   }
 }
 
-/* styling text on landing page so link isn'y underlined after click */
+/* styling text on landing page so link isn't underlined after click */
 #link {
   text-decoration: none;
   color: gold;
 }
 
-/* container for the parallax scrolling effect */
+
 
 /* parallax effect for posters, scrolls across bottom */
 
@@ -134,14 +137,14 @@ p {
   position: absolute;
   bottom: 0;
   z-index: -1;
-  height: 30vh;
+  height: 35vh;
   width: 100%;
   background-image: url("../../images/Posters6.png");
   background-repeat: repeat-x;
   background-size: auto 100%;
   animation: 50s para infinite linear;
 }
-
+/* animation for the side scroll effect, pixels adjusts the speed of the scroll */
 @keyframes para {
   100% {
     background-position: -1500px 20%;
