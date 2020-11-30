@@ -241,7 +241,7 @@ const styles = {
   ButtonContainer: {
     display: "flex",
     width: "100%",
-    marginTop:"5vh",
+    marginTop:"1vh",
     justifyContent: "space-evenly",
   },
 };
