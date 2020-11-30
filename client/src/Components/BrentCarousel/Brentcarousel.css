@@ -34,7 +34,7 @@
 }
 
 .carousel .thumb {
-    border:3px solid gold;
+  border: 3px solid gold;
   width: 120px !important;
 }
 
@@ -51,7 +51,7 @@
 .carousel .carousel-status {
   color: gold;
   font-family: "Oswald", sans-serif;
-  background:transparent
+  background: transparent;
 }
 
 @media (max-width: 600px){

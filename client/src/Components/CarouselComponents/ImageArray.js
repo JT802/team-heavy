@@ -34,17 +34,7 @@ import heavy32 from "../../images/heavy32.jpg";
 import heavy33 from "../../images/heavy33.jpg";
 import heavy34 from "../../images/heavy34.jpg";
 import heavy35 from "../../images/heavy35.jpg";
-import heavy36 from "../../images/heavy36.jpg";
-import heavy37 from "../../images/heavy37.jpg";
-import heavy38 from "../../images/heavy38.jpg";
-import heavy39 from "../../images/heavy39.jpg";
-import heavy40 from "../../images/heavy40.jpg";
-import heavy41 from "../../images/heavy41.jpg";
-import heavy42 from "../../images/heavy42.jpg";
-import heavy43 from "../../images/heavy43.jpg";
-import heavy44 from "../../images/heavy44.jpg";
-import heavy45 from "../../images/heavy45.jpg";
-import heavy46 from "../../images/heavy46.jpg";
+
 
 
 
@@ -85,17 +75,5 @@ export const imagepaths = [
   heavy33,
   heavy34,
   heavy35,
-  heavy36,
-  heavy37,
-  heavy38,
-  heavy39,
-  heavy40,
-  heavy41,
-  heavy42,
-  heavy43,
-  heavy44,
-  heavy45,
-  heavy46
-
 
 ];

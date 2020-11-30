@@ -3,7 +3,7 @@ import {useSpring, animated} from  'react-spring';
 
 import "./modal.css"
 import styled from "styled-components";
-import {AiOutlineClose} from "react-icons/ai"
+import { AiOutlineClose } from "react-icons/ai";
 
 
 //x close icon top left
@@ -17,16 +17,16 @@ const CloseButton = styled(AiOutlineClose)`
 
 //Not using this pop down animation but when I comment it out it breaks my code so leaving for now, no effect might come back to it
 export const Modal = ({ showModal, setShowModal }) => {
-    const modalRef = useRef()
-//animation with use Spring for model, 250 ms duration
-const animation = useSpring({
+  const modalRef = useRef();
+  //animation with use Spring for model, 250 ms duration
+  const animation = useSpring({
     config: {
-    //duration of fall animatiom
-    duration: 550
-    },//translates from top of screen out 100%
+      //duration of fall animatiom
+      duration: 550,
+    }, //translates from top of screen out 100%
     opacity: showModal ? 1 : 0,
-    transform: showModal ? `translateY(0%)` : `translateY(-100%)`
-});
+    transform: showModal ? `translateY(0%)` : `translateY(-100%)`,
+  });
 
 const keyPress = useCallback (e => {
   //if the escape key is pressed and the modal is open/ set show modal to false(close Modal)
