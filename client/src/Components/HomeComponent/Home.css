@@ -8,6 +8,7 @@ body {
   background-image: url("../../images/BHWDoor2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 /* aligning all p tags to have centered text */
 p {
@@ -151,86 +152,86 @@ p {
 
 @media all and (max-width: 500px) {
   /* text styling with a blur animation that blinks*/
-.info {
-  text-transform: uppercase;
-  font-size: 2rem;
-  text-align: center;
-  font-weight: 1000;
-  font-family: "Oswald", sans-serif;
-  color: gold;
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 0.5vh 0.5vw rgba(255, 217, 0, 0.5);
-  border-radius: 20%;
-  animation: blur 1.2s ease-out infinite;
-}
+  .info {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 1000;
+    font-family: "Oswald", sans-serif;
+    color: gold;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.5vh 0.5vw rgba(255, 217, 0, 0.5);
+    border-radius: 20%;
+    animation: blur 1.2s ease-out infinite;
+  }
 
-.tim-snow-text {
-  position: absolute;
-  top: 85%;
-  left: 55%;
-  max-width: 25%;
-  transform: translate(-50%, -50%);
-  font-family: "Oswald", sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 75%;
-  text-transform: uppercase;
-}
-.interview-text {
-  position: absolute;
-  top: 85%;
-  left: 24%;
-  transform: translate(-50%, -50%);
-  font-family: "Oswald", sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 75%;
-  text-transform: uppercase;
-}
+  .tim-snow-text {
+    position: absolute;
+    top: 85%;
+    left: 55%;
+    max-width: 25%;
+    transform: translate(-50%, -50%);
+    font-family: "Oswald", sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 75%;
+    text-transform: uppercase;
+  }
+  .interview-text {
+    position: absolute;
+    top: 85%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    font-family: "Oswald", sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 75%;
+    text-transform: uppercase;
+  }
 
-.about-text {
-  position: absolute;
-  top: 85%;
-  left: 88%;
-  transform: translate(-50%, -50%);
-  font-family: "Oswald", sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 75%;
-  text-transform: uppercase;
-}
+  .about-text {
+    position: absolute;
+    top: 85%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    font-family: "Oswald", sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 75%;
+    text-transform: uppercase;
+  }
 
-#BH {
-  height: 30vh;
-  width: 29vw;
-  box-shadow: 0 0 0.8vh 0.8vw rgba(255, 217, 0, 0.5);
-  border-radius: 5%;
-}
+  #BH {
+    height: 30vh;
+    width: 29vw;
+    box-shadow: 0 0 0.8vh 0.8vw rgba(255, 217, 0, 0.5);
+    border-radius: 5%;
+  }
 
-#Tim-Snow {
-  height: 30vh;
-  width: 29vw;
-  box-shadow: 0 0 0.8vh 0.8vw rgba(255, 217, 0, 0.5);
-  border-radius: 5%;
-}
+  #Tim-Snow {
+    height: 30vh;
+    width: 29vw;
+    box-shadow: 0 0 0.8vh 0.8vw rgba(255, 217, 0, 0.5);
+    border-radius: 5%;
+  }
 
-#BHW {
-  height: 30vh;
-  width: 29vw;
-  box-shadow: 0 0 0.8vh 0.8vw rgba(255, 217, 0, 0.5);
-  border-radius: 5%;
-}
+  #BHW {
+    height: 30vh;
+    width: 29vw;
+    box-shadow: 0 0 0.8vh 0.8vw rgba(255, 217, 0, 0.5);
+    border-radius: 5%;
+  }
 
-.parallax-footer {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  bottom: -3%;
-  margin:0;
-  padding:0;
-  z-index: -1;
-  height: 35vh;
-  width: 100%;
-  background-image: url("../../images/PosterScroll.png");
-  background-repeat: repeat-x;
-  background-size: auto 100%;
-  animation: 50s para infinite linear;
-}
+  .parallax-footer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: -3%;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    height: 35vh;
+    width: 100%;
+    background-image: url("../../images/PosterScroll.png");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    animation: 50s para infinite linear;
+  }
 }

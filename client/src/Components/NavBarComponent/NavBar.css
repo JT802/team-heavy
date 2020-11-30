@@ -53,3 +53,9 @@ li {
 .dropdown:hover .menu-content {
   display: block;
 }
+@media (max-width: 600px){
+  #burger{
+    width:30px;
+    height:20px;
+  }
+}
