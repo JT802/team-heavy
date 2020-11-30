@@ -236,7 +236,6 @@ const styles = {
     height: "55vh",
     width: "50vw",
   },
-
   //container for previous and next buttons
   ButtonContainer: {
     display: "flex",
