@@ -8,6 +8,7 @@ body {
   background-image: url("../../images/BHWDoor2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 /* aligning all p tags to have centered text */
 p {

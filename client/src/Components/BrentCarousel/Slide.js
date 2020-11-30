@@ -5,6 +5,7 @@ import ReactAudioPlayer from "react-audio-player";
 import screenfull from "screenfull";
 import Modal from "react-modal";
 import "./Brentcarousel.css";
+import MediaQuery from "react-responsive"
 export default function Slide({ imageSrc, videoSrc, textSrc, interviewSrc }) {
   //save video ref to play video onclick
   const videoref = useRef();
@@ -43,7 +44,9 @@ export default function Slide({ imageSrc, videoSrc, textSrc, interviewSrc }) {
             setAudioPlayState(true);
           }}
         >
-          Listen To Full Interview With Transcript
+          <MediaQuery maxDeviceWidth={600}>Listen To Full Interview</MediaQuery>
+          <MediaQuery minDeviceWidth={600}>Listen To Full Interview With Transcript</MediaQuery>
+          
         </button>
         {/* only show react player when video is playing */}
         <div className={playState ? "" : "is-hidden"}>

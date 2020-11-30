@@ -19,7 +19,7 @@
   height: 40px;
   font-size: 20px;
   margin-right: 0;
-  margin: 16px;
+  margin: 4px 16px;
   color: gold;
   font-family: "Oswald", sans-serif;
   background-color: black;
@@ -40,14 +40,36 @@
 
 .carousel .thumbs {
   overflow: scroll;
+  transform:translate3d(0px,0px,0px) !important;
 }
 
 .carousel .slide .legend {
   background: transparent;
+
 }
 
 .carousel .carousel-status {
   color: gold;
   font-family: "Oswald", sans-serif;
   background: transparent;
+}
+
+@media (max-width: 600px){
+    .smallerImg{
+       width:100% 
+    }
+    .carousel .slider-wrapper {
+        width: 100%;
+      }
+      .carousel-root{
+          padding-top:40px
+      }
+
+      .carousel .control-dots{
+          display:none;
+      }
+      .carousel .slide .legend {
+          bottom:0;
+          padding:0;
+      }
 }
