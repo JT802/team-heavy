@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useCallback} from "react";
-import {useSpring, animated} from  'react-spring'
+import {useSpring, animated} from  'react-spring';
+
 import "./modal.css"
 import styled from "styled-components";
 import {AiOutlineClose} from "react-icons/ai"
@@ -11,6 +12,7 @@ const CloseButton = styled(AiOutlineClose)`
   margin-left:.5vw;
   width: 7vw;
   height 7vh;
+  color:white;
 `;
 
 //Not using this pop down animation but when I comment it out it breaks my code so leaving for now, no effect might come back to it
@@ -56,10 +58,12 @@ useEffect(() => {
                 <div className="Name">More About The Photographer: </div>
                 <h4 className = "Text">
                 {'\u00A0'}{'\u00A0'}{'\u00A0'}Tim Snow is a Montreal based photojournalist and photography educator. He took these images at the “final” 242 Main concert on December 3, 2016. 
-              242 Main is located in the basement of Memorial Auditorium; when the building became unsafe, the city closed 242 Main and other programs. 22 bands performed at this concert to celebrate 242 Main, and Big Heavy World began the years-long advocacy that would ensure youth-led music would emerge in the space again. Find more of Tim's images at timsnowphotography.com. 
+              242 Main is located in the basement of Memorial Auditorium; when the building became unsafe, the city closed 242 Main and other programs. 22 bands performed at this concert to celebrate 242 Main, and Big Heavy World began the years-long advocacy that would ensure youth-led music would emerge in the space again. Find more of Tim's images at <a  className= "Link" href="http://www.timsnowphotography.com/">Tim Snow Photography</a>. 
               Tim can be contacted by email at tim@timsnowphotography.com or at 514-238-4529.
                 </h4>
+                
               </div>
+              
           </div>
           </animated.div>
         </div>

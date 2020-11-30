@@ -18,6 +18,12 @@
     margin-top: 5%;
     margin-left: 18%;
   }
+  /*Tim Snow Photographs*/
+.CascadeImage {
+  width: 50%;
+  height: 50%;
+  box-shadow: 5px 5px 4px white;
+}
 }
 
 .PosterText {

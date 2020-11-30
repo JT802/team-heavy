@@ -32,7 +32,7 @@ export default class DeckCascade extends Component {
       y: parseFloat(this.deck.style.height) / 2,
     };
     //total cards is 9, we change this depending on our amount of data we want to show
-    let total_number_of_cards = 22;
+    let total_number_of_cards = 46;
     //determines middle card position, math floor rounds this to a whole number
     let middle_card_by_index = Math.floor(total_number_of_cards / 2);
     let new_x = 0;
@@ -42,7 +42,7 @@ export default class DeckCascade extends Component {
 
     //for loop pushing images and other properties into new cards
     //9 is total number of cards, as long as less than total create a card
-    for (let i = 0; i < 22; i++) {
+    for (let i = 0; i < 46; i++) {
       //here  we are telling the computer which side of the center image/card we are on
       if (i < middle_card_by_index) {
         //left side of the deck
@@ -232,7 +232,7 @@ const styles = {
   //image deck styling, the deck holds the cards or images
   //transform puts it truly in the center of the page
   deck: {
-    transform: "translate(85%, 50%)",
+    transform: "translate(100%, 50%)",
     height: "55vh",
     width: "50vw",
   },

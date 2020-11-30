@@ -24,6 +24,14 @@ button {
   cursor: pointer;
   border-radius: 5%;
 }
+.previousButton:hover{
+  background: rgba(0, 0, 0, 0.8);
+  transition: 1s;
+}
+.nextButton:hover{
+  background: rgba(0, 0, 0, 0.8);
+  transition: 1s;
+}
 /*Button flex container*/
 .buttonContainerPoster {
   display: flex;
