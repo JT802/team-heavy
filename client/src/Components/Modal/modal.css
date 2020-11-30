@@ -59,6 +59,8 @@
   z-index:10;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
+  overflow-x: hidden;
+  overflow-y:hidden;
 }
 
 /*modal display*/
@@ -67,6 +69,8 @@
   height: 150%;
   color: #000;
   z-index: 1;
+  overflow-x: hidden;
+  overflow-y:hidden;
 }
 
 .Link{

@@ -74,6 +74,5 @@ export const imagepaths = [
   heavy32,
   heavy33,
   heavy34,
-  heavy35,
-
+  heavy35
 ];

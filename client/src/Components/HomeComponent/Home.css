@@ -228,7 +228,7 @@ p {
   z-index: -1;
   height: 35vh;
   width: 100%;
-  background-image: url("../../images/Posters6.png");
+  background-image: url("../../images/PosterScroll.png");
   background-repeat: repeat-x;
   background-size: auto 100%;
   animation: 50s para infinite linear;
