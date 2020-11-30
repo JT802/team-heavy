@@ -232,7 +232,7 @@ const styles = {
   //image deck styling, the deck holds the cards or images
   //transform puts it truly in the center of the page
   deck: {
-    transform: "translate(97%, 50%)",
+    transform: "translate(85%, 50%)",
     height: "55vh",
     width: "50vw",
   },
