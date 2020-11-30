@@ -8,9 +8,9 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 //static middleware
-app.use(express.static("./client/public"));
+app.use(express.static("./client/build"));
 app.get("*", (request, response) => {
-  response.sendFile(path.resolve("./client/src"));
+  response.sendFile(path.resolve("./client/build/index.html"));
 });
 
 //listen for port
