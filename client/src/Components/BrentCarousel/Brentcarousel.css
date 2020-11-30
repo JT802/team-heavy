@@ -8,7 +8,6 @@
 
 .smallerImg {
   width: 50vw;
-
   margin: auto;
 }
 
@@ -21,12 +20,34 @@
   font-size: 20px;
   margin-right: 0;
   margin: 16px;
+  color: gold;
+  font-family: "Oswald", sans-serif;
+  background-color: black;
 }
 
 .carousel-root {
-  margin-top: 70px;
+  padding-top: 5%;
 }
 
-.carousel-status {
+.nav {
+  margin-top: 0%;
+}
+
+.carousel .thumb {
+  border: 3px solid gold;
+  width: 120px !important;
+}
+
+.carousel .thumbs {
+  overflow: scroll;
+}
+
+.carousel .slide .legend {
+  background: transparent;
+}
+
+.carousel .carousel-status {
+  color: gold;
+  font-family: "Oswald", sans-serif;
   background: transparent;
 }

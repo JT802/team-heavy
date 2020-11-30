@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+*{
+  text-decoration: none;
+}
+
+/*About the Photographer Button*/
+.StyledButton {
+  font-family: 'Oswald', sans-serif;
+  min-width: 15vw;
+  padding: 2vh 2vw;
+  border-radius: 4px;
+  border: none;
+  background: black;
+  color: gold;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left:70vw;
+  margin-bottom: 5vh;
+}
+.StyledButton:hover{
+  background: rgba(0, 0, 0, 0.8);
+  transition: 1s;
+}
+
+/*line height text direction*/
+.ModalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  color: black;
+}
+
+/*modal text*/
+.Text {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.8rem;
+  color: gold;
+  max-width:40%;
+  margin-left: -30%;
+  line-height: 1.7;
+}
+
+.Name {
+  font-family: 'Rubik', sans-serif;
+  font-size: 3.5rem;
+  color: gold;
+  margin-left:-30%;
+  margin-top:-5vh;
+}
+
+/*styles for components*/
+.Background {
+  position: absolute;
+  width: 100%;
+  height: 65vh;
+  z-index:10;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+}
+
+/*modal display*/
+.ModalWrapper {
+  width: 125%;
+  height: 150%;
+  color: #000;
+  z-index: 1;
+}
+
+.Link{
+  color:gold;
+  font-weight: 10000;
+}
+
+@media all and (max-width: 500px) {
+
+    .StyledButton {
+      font-size: 1rem;
+  
+    }
+    .Name {
+        font-size: 1.5rem;
+        margin-left: -40vw;
+    }
+    .Text{
+        font-size: 1rem;
+        max-width: 50%;
+        
+    }
+  }
+

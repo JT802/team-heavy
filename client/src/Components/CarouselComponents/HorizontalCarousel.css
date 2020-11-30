@@ -1,11 +1,10 @@
 /*Previous and Next Buttons*/
-
 button {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
-.previousButton{
+.previousButton {
   width: auto;
   height: 15vh;
   background-color: black;
@@ -15,8 +14,8 @@ button {
   border-radius: 5%;
 }
 
-.nextButton{
-  position:relative;
+.nextButton {
+  position: relative;
   width: auto;
   height: 15vh;
   background-color: black;
@@ -24,13 +23,56 @@ button {
   color: gold;
   cursor: pointer;
   border-radius: 5%;
-
+}
+.previousButton:hover{
+  background: rgba(0, 0, 0, 0.8);
+  transition: 1s;
+}
+.nextButton:hover{
+  background: rgba(0, 0, 0, 0.8);
+  transition: 1s;
 }
 /*Button flex container*/
 .buttonContainerPoster {
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  width:100%;
-  margin-top: 5vh;
+  width: 80%;
+  margin-top: 12%;
+  margin-left: 15%;
 }
 
+/*Media Qeuries*/
+@media all and (max-width: 500px) {
+  .nextButton {
+    margin-top: 15rem;
+    padding: 0;
+    margin: 0;
+  }
+  .buttonContainerPoster {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 55%;
+    margin-left: 15%;
+  }
+  .previousButton {
+    width: auto;
+    height: 10vh;
+    background-color: black;
+    font-weight: 900;
+    color: gold;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+
+  .nextButton {
+    position: relative;
+    width: auto;
+    height: 10vh;
+    background-color: black;
+    font-weight: 900;
+    color: gold;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+}

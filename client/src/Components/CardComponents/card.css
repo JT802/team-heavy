@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+
+@media all and (max-width: 500px) {
+  .cardImage {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 55vh;
+    font-size: 2.5em;
+  }
+  .PosterText {
+    font-size: 12px;
+    font-family: "Oswald", sans-serif;
+    color: gold;
+    font-weight: 10000;
+    text-shadow: 15%;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 18%;
+  }
+  /*Tim Snow Photographs*/
+.CascadeImage {
+  width: 50%;
+  height: 50%;
+  box-shadow: 5px 5px 4px white;
+}
+}
+
+.PosterText {
+  font-size: 250%;
+  font-family: "Oswald", sans-serif;
+  color: gold;
+  font-weight: 10000;
+  text-shadow: 15%;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 18%;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 65vh;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.cardImage {
+  width: auto;
+  height: 100%;
+  box-shadow: 10px 10px 8px black;
+  margin-left: 20%;
+  margin-top: 0%;
+}
+
+/*Tim Snow Photographs*/
+.CascadeImage {
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 4px white;
+}
