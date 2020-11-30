@@ -1,28 +1,32 @@
-.is-hidden{
-    display:none;
+.is-hidden {
+  display: none;
 }
 
-.pdf-wrapper{
-    height:100%
+.pdf-wrapper {
+  height: 100%;
 }
 
-.smallerImg{
-    width:50vw;
-   
-    margin:auto;
+.smallerImg {
+  width: 50vw;
+
+  margin: auto;
 }
 
 .carousel .slider-wrapper {
-    width:65%
+  width: 65%;
 }
 
-.buttonSmall{
-    height:40px;
-    font-size: 20px;
-    margin-right: 0;
-    margin:16px;
+.buttonSmall {
+  height: 40px;
+  font-size: 20px;
+  margin-right: 0;
+  margin: 16px;
 }
 
-.carousel-root{
-    margin-top:70px;
+.carousel-root {
+  margin-top: 70px;
+}
+
+.carousel-status {
+  background: transparent;
 }
