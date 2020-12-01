@@ -61,7 +61,7 @@ p {
   transform: translate(-50%, -50%);
   font-family: "Oswald", sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 150%;
+  font-size: 3vh;
   text-transform: uppercase;
 }
 /* tim snow photo, styled with a box shadow to give a halo-like appearance around image, border radius rounds the image slightly */
@@ -79,7 +79,7 @@ p {
   transform: translate(-50%, -50%);
   font-family: "Oswald", sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 150%;
+  font-size: 3vh;
   text-transform: uppercase;
 }
 /* 242 main door photo, styled with a box shadow to give a halo-like appearance around image, border radius rounds the image slightly */
@@ -97,16 +97,19 @@ p {
   transform: translate(-50%, -50%);
   font-family: "Oswald", sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 150%;
+  font-size: 3vh;
   text-transform: uppercase;
 }
 
 /* text styling with a blur animation that flashes*/
 .info {
-  width: max-content;
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
-  font-size: 5rem;
-  letter-spacing: 1vw;
+  font-size: 6vh;
+  letter-spacing: 1.5vw;
   text-align: center;
   font-weight: 1000;
   font-family: "Oswald", sans-serif;
