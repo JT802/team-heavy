@@ -9,7 +9,7 @@ function About() {
       <div className="about-page">
         <p id="about-title"> About 242 Main</p>
         {/* The text below is sourced from the BHW website */}
-        <p>
+        <p id="about-body">
           For more than 30 years, 242 Main was a gathering spot for the youth of
           northwestern Vermont. Funded by the City of Burlington (begun during
           the Bernie Sanders Mayoral administration), 242 provided a haven for

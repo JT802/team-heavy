@@ -22,7 +22,7 @@
 
 .menu-content {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(105, 105, 105, 0.6);
   min-width: 6vw;
   min-height: 8vh;
   z-index: 5;

@@ -2,29 +2,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
 /* -- About Page styles -- */
 
-p {
-  background-color: rgba(0, 0, 0, 0.3);
-  margin: 0;
-  padding: 0;
-  font-family: "Rubik", sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: justify;
-  color: gold;
-  line-height: 2;
-  width: 52vw;
-}
-
 #about-title {
   margin: 0;
   padding: 0;
+  background-color: rgba(105, 105, 105, 0.6);
   font-family: "Oswald", sans-serif;
   font-size: 2rem;
   font-weight: 700;
+  color: gold;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#about-body {
+  background-color: rgba(105, 105, 105, 0.6);
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  color: gold;
+  line-height: 2;
+  width: 52vw;
 }
 
 .about-page {

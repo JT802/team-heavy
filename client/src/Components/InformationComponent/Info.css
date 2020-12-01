@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 /* -- Information page styles*/
 
-p {
-    background-color: rgba(0, 0, 0, 0.3);
+.information-body {
+    background-color: rgba(105, 105, 105, 0.6);
     margin: 1rem 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 700;
-    text-align: justify;
+    text-align: left;
     color: gold;
     line-height: 2;
     width: 52vw;
@@ -26,6 +26,7 @@ p {
 }
 
 #information-title {
+    background-color: rgba(105, 105, 105, 0.6);
     margin: 2rem 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
@@ -51,8 +52,8 @@ p {
     margin-right: .6vw;
 }
 
-
 /*Media Qeuries*/
+
 @media all and (max-width: 600px) {
     p {
         background-color: rgba(0, 0, 0, 0.3);
@@ -66,9 +67,8 @@ p {
         line-height: 2;
         width: auto;
     }
-#info-link{
-    width:20px;
-    height:20px;
+    #info-link {
+        width: 20px;
+        height: 20px;
+    }
 }
-}
-
