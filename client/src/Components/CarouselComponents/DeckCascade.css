@@ -42,7 +42,8 @@ button {
 #next {
   width: auto;
   height: 10vh;
-  background-color: black;
+  opacity:10;
+  background: transparent;
   font-weight: 900;
   color: gold;
   cursor: pointer;
