@@ -103,8 +103,10 @@ p {
 
 /* text styling with a blur animation that flashes*/
 .info {
+  width: max-content;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 5rem;
+  letter-spacing: 1vw;
   text-align: center;
   font-weight: 1000;
   font-family: "Oswald", sans-serif;
