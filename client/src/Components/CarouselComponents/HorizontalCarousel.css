@@ -17,26 +17,19 @@ button {
   position: relative;
   width: auto;
   height: 15vh;
-  
   font-weight: 900;
   color: gold;
   cursor: pointer;
   border-radius: 5%;
 }
-.previousButton:hover{
-  background: rgba(0, 0, 0, 0.8);
-  transition: 1s;
-}
-.nextButton:hover{
-  background: rgba(0, 0, 0, 0.8);
-  transition: 1s;
-}
+
+
 /*Button flex container*/
 .buttonContainerPoster {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 12%;
+  margin-top: 20%;
   margin-left: 15%;
 }
 

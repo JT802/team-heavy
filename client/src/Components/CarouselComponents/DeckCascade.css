@@ -29,15 +29,6 @@ button {
   border-radius: 5%;
   padding: 1vw;
 }
-#previous:hover{
-  background: rgba(0, 0, 0, 0.8);
-  transition: 1s;
-}
-#next:hover{
-  background: rgba(0, 0, 0, 0.8);
-  transition: 1s;
-}
-
 
 #next {
   margin:0;

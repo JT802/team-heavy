@@ -239,7 +239,7 @@ const styles = {
   //container for previous and next buttons
   ButtonContainer: {
     display: "flex",
-    width: "100%",
+    width: "105%",
     marginTop:"1vh",
     justifyContent: "space-evenly",
   },

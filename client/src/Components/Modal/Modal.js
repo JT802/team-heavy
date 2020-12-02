@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useCallback} from "react";
 import {useSpring, animated} from  'react-spring';
-
 import "./modal.css"
 import styled from "styled-components";
 import { AiOutlineClose } from "react-icons/ai";
@@ -15,7 +14,7 @@ const CloseButton = styled(AiOutlineClose)`
   color:white;
 `;
 
-//Not using this pop down animation but when I comment it out it breaks my code so leaving for now, no effect might come back to it
+//popdown animation
 export const Modal = ({ showModal, setShowModal }) => {
   const modalRef = useRef();
   //animation with use Spring for model, 250 ms duration
