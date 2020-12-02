@@ -1,3 +1,10 @@
+.interview-title {
+  text-align: center;
+}
+.h1-title {
+  margin: 0;
+}
+
 .is-hidden {
   display: none;
 }
@@ -40,12 +47,11 @@
 
 .carousel .thumbs {
   overflow: scroll;
-  transform:translate3d(0px,0px,0px) !important;
+  transform: translate3d(0px, 0px, 0px) !important;
 }
 
 .carousel .slide .legend {
   background: transparent;
-
 }
 
 .carousel .carousel-status {
@@ -54,23 +60,44 @@
   background: transparent;
   right:50%
 }
+.carousel .control-arrow:before,
+.carousel.carousel-slider .control-arrow:before {
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+}
+.carousel .control-next.control-arrow:before {
+  border-left: 16px solid gold;
+}
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid gold;
+}
+.audio-player {
+  display: block;
+  margin: auto;
+}
+.artist-name {
+  position: absolute;
+  color: gold;
+  top: 8px;
+  right: 8px;
+}
 
-@media (max-width: 600px){
-    .smallerImg{
-       width:100% 
-    }
-    .carousel .slider-wrapper {
-        width: 100%;
-      }
-      .carousel-root{
-          padding-top:40px
-      }
+@media (max-width: 600px) {
+  .smallerImg {
+    width: 100%;
+  }
+  .carousel .slider-wrapper {
+    width: 100%;
+  }
+  .carousel-root {
+    padding-top: 40px;
+  }
 
-      .carousel .control-dots{
-          display:none;
-      }
-      .carousel .slide .legend {
-          bottom:0;
-          padding:0;
-      }
+  .carousel .control-dots {
+    display: none;
+  }
+  .carousel .slide .legend {
+    bottom: 0;
+    padding: 0;
+  }
 }

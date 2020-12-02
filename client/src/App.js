@@ -14,7 +14,7 @@ function App() {
     // -- NavBar persists across pages -- //
     <div>
       <Router>
-        {/* {window.location.pathname === "/" ? null : <NavBar />} */}
+     
 
         <InfoLink />
         <Switch>

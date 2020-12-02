@@ -6,13 +6,14 @@ import screenfull from "screenfull";
 import Modal from "react-modal";
 import "./Brentcarousel.css";
 import MediaQuery from "react-responsive";
-export default function Slide({ imageSrc, videoSrc, textSrc, interviewSrc }) {
+export default function Slide({ imageSrc, videoSrc, textSrc, interviewSrc, name }) {
   //save video ref to play video onclick
   const videoref = useRef();
   const audioref = useRef();
   //tracking the video and audio playstates
   const [playState, setplayState] = useState(false);
   const [audioPlayState, setAudioPlayState] = useState(false);
+  const [modalState, setModalState] = useState(false);
   //using screenfull.js when we exit fullscreen mode stop video playback
   const fullScreenHandler = (evt) => {
     if (!screenfull.isFullscreen) {
@@ -22,6 +23,7 @@ export default function Slide({ imageSrc, videoSrc, textSrc, interviewSrc }) {
   };
   return (
     <div>
+      <div className="artist-name">{name}</div>
       <div className="smallerImg">
         <img src={imageSrc} alt="interview subject" />
       </div>
@@ -35,18 +37,19 @@ export default function Slide({ imageSrc, videoSrc, textSrc, interviewSrc }) {
             screenfull.on("change", fullScreenHandler);
           }}
         >
-          Watch Interview Clip
+          WATCH INTERVIEW CLIP
         </button>
         <button
           className="buttonSmall"
           onClick={() => {
             //play audio
             setAudioPlayState(true);
+            setModalState(true);
           }}
         >
-          <MediaQuery maxDeviceWidth={600}>Listen To Full Interview</MediaQuery>
+          <MediaQuery maxDeviceWidth={600}>LISTEN TO FULL INTERVIEW</MediaQuery>
           <MediaQuery minDeviceWidth={600}>
-            Listen To Full Interview With Transcript
+            LISTEN TO FULL INTERVIEW WITH TRANSCRIPT
           </MediaQuery>
         </button>
         {/* only show react player when video is playing */}
@@ -59,8 +62,9 @@ export default function Slide({ imageSrc, videoSrc, textSrc, interviewSrc }) {
           />
         </div>
         {/* only show modal when audio is playing */}
-        <Modal isOpen={audioPlayState}>
+        <Modal isOpen={modalState} onRequestClose={()=>{setModalState(false)}}>
           <ReactAudioPlayer
+            className="audio-player"
             playing={audioPlayState}
             controls
             ref={audioref}

@@ -5,19 +5,30 @@ import { Carousel } from "react-responsive-carousel";
 import Slide from "./Slide";
 import "./Brentcarousel.css";
 export default function BrentCarousel() {
-  
   return (
     <div>
-      <div className="nav"><NavBar /></div>
+      <div className="nav">
+        <NavBar />
+      </div>
+      <div className="interview-title">
+        <h1 className="h1-title">THE PEOPLE OF 242 MAIN: INTERVIEWS</h1>
+      </div>
       <Carousel
-      //show correct thumbnail images
+        //show correct thumbnail images
         renderThumbs={(children) => {
           return children.map((child) => {
-            return <img src={child.props.imageSrc} alt="interview subject thumbnail" />;
+            return (
+              <img
+                src={child.props.imageSrc}
+                alt="interview subject thumbnail"
+              />
+            );
           });
         }}
+        // slide components that link images, video, audio and PDf transcript files
       >
         <Slide
+          name="Bobby Hackney"
           imageSrc="https://omeka.bigheavyworld.com/files/original/baf306eeec77522da3fddba54a6764e7.jpg"
           videoSrc="https://omeka.bigheavyworld.com/files/original/27b404d7dd692585a0d0e63bd8580e0c.mp4"
           interviewSrc="https://omeka.bigheavyworld.com/files/original/553da1c790670a0cd949d49e7d2ea2a9.mp3"
