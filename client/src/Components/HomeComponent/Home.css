@@ -104,7 +104,7 @@ p {
 /* text styling with a blur animation that flashes*/
 .info {
   display: flex;
-  width: 60%;
+  width: 80%;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
