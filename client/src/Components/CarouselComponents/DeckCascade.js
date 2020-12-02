@@ -218,8 +218,8 @@ export default class DeckCascade extends Component {
           </div>
           {/* Arrows in Container */}
           <div style = {styles.ButtonContainer}>
-          <button><AiOutlineArrowLeft id="previous"onClick={this.handle_previous}></AiOutlineArrowLeft></button>
-          <button><AiOutlineArrowRight id="next" onClick={this.handle_next}></AiOutlineArrowRight></button>
+          <div><AiOutlineArrowLeft id="previous"onClick={this.handle_previous}></AiOutlineArrowLeft></div>
+          <div><AiOutlineArrowRight id="next" onClick={this.handle_next}></AiOutlineArrowRight></div>
           </div>
       </div>
       </div>

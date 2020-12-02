@@ -14,7 +14,7 @@ export default function ModalApp() {
 
   return (
     <div>
-      <button className="StyledButton" onClick={openModal}>About the Photographer</button>
+      <button className="StyledButton" onClick={openModal}>ABOUT THE PHOTOGRAPHER</button>
       <Modal showModal={showModal} setShowModal={setShowModal} />
     </div>
   );

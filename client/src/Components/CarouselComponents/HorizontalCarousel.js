@@ -1123,7 +1123,7 @@ export default class HorizontalCarousel extends Component {
             {/* Previous Button handles previous on click*/}
             {/* Next Button handles next function on click*/}
             <div className="buttonContainerPoster">
-              <button>
+              <div>
                 {" "}
                 <AiOutlineArrowLeft
                   className="previousButton"
@@ -1132,13 +1132,13 @@ export default class HorizontalCarousel extends Component {
                 >
                   {" "}
                 </AiOutlineArrowLeft>
-              </button>
-              <button>
+              </div>
+              <div>
                 <AiOutlineArrowRight
                   className="nextButton"
                   onClick={this.handle_next}
                 ></AiOutlineArrowRight>
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -1153,11 +1153,12 @@ const styles = {
     //center viewport
     //holds the slider position
     //so it's center
-    marginLeft: "7%",
+    marginLeft: "22%",
     height: "100vh",
-    width: "70vw",
-    paddingLeft: "5%",
+    width: "45vw",
     overflow: "hidden",
+    paddingRight:'10%'
+
   },
   //flex container for carousel
   card_container: {

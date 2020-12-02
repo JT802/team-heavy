@@ -7,7 +7,6 @@ button {
 .previousButton {
   width: auto;
   height: 15vh;
-  background-color: black;
   font-weight: 900;
   color: gold;
   cursor: pointer;
@@ -18,7 +17,7 @@ button {
   position: relative;
   width: auto;
   height: 15vh;
-  background-color: black;
+  
   font-weight: 900;
   color: gold;
   cursor: pointer;
@@ -36,7 +35,7 @@ button {
 .buttonContainerPoster {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   margin-top: 12%;
   margin-left: 15%;
 }

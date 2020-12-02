@@ -6,9 +6,9 @@
 
 h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   margin-top: 3%;
-  margin-left: 10vw;
+  margin-left: 15vw;
   color: gold;
   font-weight: 1000;
   text-shadow: 5px;
@@ -20,11 +20,10 @@ button {
 }
 #previous {
   margin:0;
-  padding:0;
   width: auto;
-  height: 10vh;
-  background-color: black;
-  font-weight: 900;
+  font-style: bold;
+  height: 12vh;
+  font-weight: 9000;
   color: gold;
   cursor: pointer;
   border-radius: 5%;
@@ -39,17 +38,17 @@ button {
   transition: 1s;
 }
 
+
 #next {
+  margin:0;
   width: auto;
-  height: 10vh;
-  opacity:10;
-  background: transparent;
-  font-weight: 900;
+  font-style: bold;
+  height: 12vh;
+  font-weight: 9000;
   color: gold;
   cursor: pointer;
-  padding: 1vw;
-  padding: 1vw;
   border-radius: 5%;
+  padding: 1vw;
 }
 
 .ImageSlider {
