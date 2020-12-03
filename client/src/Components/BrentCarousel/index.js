@@ -231,6 +231,20 @@ export default function BrentCarousel() {
           interviewSrc="https://omeka.bigheavyworld.com/files/original/6d8b8c782aca95195ae50dd98f6e3711.mp3"
           textSrc="https://omeka.bigheavyworld.com/files/original/7afdc624be2402970e48641a7446abdc.pdf"
         />
+        <Slide
+          name="Mike Cram"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/31107da563f48ad094c9b72d5d805e6c.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/cbac5fd3c81dd46a561bf4375ef8b3e8.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/041cdf23c2133431acafefaea0538824.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/04ca3b1d0d54ffa5ae485f8c1f4985af.pdf"
+        />
+        <Slide
+          name="Mike Gatti"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/d18227a881e8a2e3709e21d375f21ba8.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/6bb189b6da489d5bd84024e0997e58ea.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/697ec451fafcf78b874189cae48d807c.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/d77ae384130c321dffffc19642214c4b.pdf"
+        />
 
       </Carousel>
     </div>
