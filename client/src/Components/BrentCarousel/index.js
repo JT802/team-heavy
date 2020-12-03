@@ -154,7 +154,7 @@ export default function BrentCarousel() {
           interviewSrc="https://omeka.bigheavyworld.com/files/original/ea37f71156be97d5daa9792cb8ad6982.mp3"
           textSrc="https://omeka.bigheavyworld.com/files/original/c6e544064f70796afa33b218382e1a34.pdf"
         />
-         <Slide
+        <Slide
           name="Jennifer Blair"
           imageSrc="https://omeka.bigheavyworld.com/files/original/22ad925004744ac1e2858342d32d2e0d.jpg"
           videoSrc="https://omeka.bigheavyworld.com/files/original/cfa452d851bffbf50c39c7808eff93ae.mp4"
@@ -168,7 +168,7 @@ export default function BrentCarousel() {
           interviewSrc="https://omeka.bigheavyworld.com/files/original/81b98b907f4d3d4857bfe7ece15ba6d9.mp3"
           textSrc="https://omeka.bigheavyworld.com/files/original/6dcde99458ee4886d4d7d5884d4ed27a.pdf"
         />
-         <Slide
+        <Slide
           name="Jessica Morley"
           imageSrc="https://omeka.bigheavyworld.com/files/original/39704261f22e5a6d886d651c2b8a005f.jpg"
           videoSrc="https://omeka.bigheavyworld.com/files/original/ff267d5dc54e8dda3a7bee205c43cf9a.mp4"
@@ -210,7 +210,7 @@ export default function BrentCarousel() {
           interviewSrc="https://omeka.bigheavyworld.com/files/original/c0ca8765fe9f2e79280b5193b6372af9.mp3"
           textSrc="https://omeka.bigheavyworld.com/files/original/27f77a9f7433639d3ad08e696f96a5f2.pdf"
         />
-         <Slide
+        <Slide
           name="Matt Kimball"
           imageSrc="https://omeka.bigheavyworld.com/files/original/5585f36c0b43b863662b7a3e5140e0d3.jpg"
           videoSrc="https://omeka.bigheavyworld.com/files/original/59565da60f75d81aad602fa8a27f05c1.mp4"
@@ -245,7 +245,125 @@ export default function BrentCarousel() {
           interviewSrc="https://omeka.bigheavyworld.com/files/original/697ec451fafcf78b874189cae48d807c.mp3"
           textSrc="https://omeka.bigheavyworld.com/files/original/d77ae384130c321dffffc19642214c4b.pdf"
         />
-
+        <Slide
+          name="Mike Halvorsen"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/5f224799edfcbc6b0444d07c4c044d1b.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/494cf606a567eef72ebffa559bccf02c.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/1edffc172000df1dc1525a0a34e76fbb.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/653ef1acf29556388eadd5377c2aac40.pdf"
+        />
+        <Slide
+          name="Mikey X Wierzbicki"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/11f4393e68960bea572e4f3a4ed805c5.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/40988526087dfaf0d841a6201a95e747.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/2ab8387f96fb05d0d8b24a3d6f00a053.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/693c7e65cae512651d18c982e9566bdc.pdf"
+        />
+        <Slide
+          name="Nick Grandchamp"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/01723e3349b58e1110d4b423348ad56f.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/06f8d9a32ea24ef657d45306138d443b.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/56b314d35d73577bf71ad91aa1d0812c.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/8f24cbbae7adbfc09ee0485902ee4cb9.pdf"
+        />
+        <Slide
+          name="Paul 'Ratdog' Allison"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/b239a35327b217d066a8ff5d38d51fda.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/0672c1cba17dde4d4e2fd5df9e28c144.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/f2eb4462af75a5a72a354f3dfa2a029e.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/ef6c883b5859e7e519bda650707cd39d.pdf"
+        />
+        <Slide
+          name="Peg Tassey"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/a63d22e5b7a5a1b22c2c8c9beeff0191.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/68b1883f738f201acddf29d080c0258f.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/e40d87f23b49bf82abb4d0a227b1e418.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/35395c26172a02ef5bcbc900e34ab204.pdf"
+        />
+        <Slide
+          name="Reba Porter"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/fe0ce62d55edeb6416e9506f03b7cfea.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/d2d643bd6618d37f6d0ae13936020d6e.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/f2b5dc2a646395a835cfe3965daacfaa.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/eeec5c9e43e3c66ba2ae042682a5bd8a.pdf"
+        />
+        <Slide
+          name="Rebekah Krushenick"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/58bec6d8858e2800740c2d1407f0d6f0.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/96702ef3f815c36910a11dd6ac164fa1.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/dbde9ea6a6864830b604edd210c67deb.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/91ef1a7ea56fe006684d5d64d9e4a21a.pdf"
+        />
+        <Slide
+          name="Sam Karcher"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/7ae1eb23f79f6abbdfaba6d636dc25ea.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/b99c27a7197c279387ad3789d057808a.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/c3cbc0866c28d62d2763c78406108568.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/b569957eb8b09e0a6dbac28602917378.pdf"
+        />
+        <Slide
+          name="Selene Colburn"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/efe6db0dd4a47e7964fddbf56da0ec38.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/86a3dfb23fe52e0310c6ef85d4398c25.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/da7b2a759bb6e491469121bc05134319.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/ed68b83644f4df9431e9228069e38269.pdf"
+        />
+        <Slide
+          name="Seth Warhol and Ben Hiller"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/f3c63a76f71bf20200d285cdd15132bd.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/92f425e3af7e2e5d656440b8a394c8d4.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/5566984ed7a2c655b14bc894e46d2920.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/ed68b83644f4df9431e9228069e38269.pdf"
+        />
+        <Slide
+          name="Simon Brody"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/3834efdfe172384d0eaee35e2a43094b.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/bc02d152ac98e2cf743bc45835b0c505.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/329b8f6a91d13708c3b9614cab43719c.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/f8220bf390d5170c697ecdf67212697b.pdf"
+        />
+        <Slide
+          name="Spencer Crispe"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/60bdbec2c7d3eed800d13cab0524c03d.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/1dcb023d861ba7f26d673510fa863afb.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/73c886d989e73cf429826f8d3695d6c6.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/9f80fe0b372f59afc4846e4e51fb4553.pdf"
+        />
+        <Slide
+          name="Sterling Dew"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/02cce1ed029bccd0efa9a52768f17036.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/c6bc4a95db215a2fe160ba0696074d0f.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/6530091d18229e6d63de700804827eeb.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/41f40af2e93fcba3d7caac93e94ed9bf.pdf"
+        />
+        <Slide
+          name="Steve Flemer"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/7f6ddc9a16743a40056e06572fd528fe.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/811957e5c0bb068a49b1f7ab4556678f.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/bac54660d2dae9618da431c9f0706e92.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/41e962c01999c5d316c8a4d902c69dd1.pdf"
+        />
+        <Slide
+          name="Todd Rheault"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/7072b3cd99630cd6b427041b6410ec5c.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/5d43db1e5f548385b22037e1ee0485d9.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/2e1154f7743a98d9d358aaaf642ee97e.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/109b03883a91e4ae1db3248ae114d06c.pdf"
+        />
+        <Slide
+          name="Torsten Rau"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/dcfe7af4ff7fd829ae130c2bdfd19910.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/5bd7f05349e8abfbed10b7de6fec3680.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/453505581202cd4dfd3c922f7e9ca7bd.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/ac65955a0d607c8bb37a3957eb2fd63b.pdf"
+        />
+        <Slide
+          name="Tyler Daniel Bean"
+          imageSrc="https://omeka.bigheavyworld.com/files/original/568a53ea128e94befff9dfcd66eafddc.jpg"
+          videoSrc="https://omeka.bigheavyworld.com/files/original/d83b0f6de7d1f9ab3ee4bf44c0de233d.mp4"
+          interviewSrc="https://omeka.bigheavyworld.com/files/original/fd061e2a732d85642237ad3210ef4516.mp3"
+          textSrc="https://omeka.bigheavyworld.com/files/original/470d5337a810d9fc67ac9b81a06721d8.pdf"
+        />
       </Carousel>
     </div>
   );

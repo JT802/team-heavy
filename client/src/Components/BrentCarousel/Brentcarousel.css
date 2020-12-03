@@ -58,7 +58,7 @@
   color: gold;
   font-family: "Oswald", sans-serif;
   background: transparent;
-  right:50%
+  right: 50%;
 }
 .carousel .control-arrow:before,
 .carousel.carousel-slider .control-arrow:before {
@@ -80,6 +80,7 @@
   color: gold;
   top: 8px;
   right: 8px;
+  font-family: "Oswald", sans-serif;
 }
 
 @media (max-width: 600px) {

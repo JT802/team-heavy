@@ -6,7 +6,13 @@ import screenfull from "screenfull";
 import Modal from "react-modal";
 import "./Brentcarousel.css";
 import MediaQuery from "react-responsive";
-export default function Slide({ imageSrc, videoSrc, textSrc, interviewSrc, name }) {
+export default function Slide({
+  imageSrc,
+  videoSrc,
+  textSrc,
+  interviewSrc,
+  name,
+}) {
   //save video ref to play video onclick
   const videoref = useRef();
   const audioref = useRef();
@@ -62,7 +68,12 @@ export default function Slide({ imageSrc, videoSrc, textSrc, interviewSrc, name 
           />
         </div>
         {/* only show modal when audio is playing */}
-        <Modal isOpen={modalState} onRequestClose={()=>{setModalState(false)}}>
+        <Modal
+          isOpen={modalState}
+          onRequestClose={() => {
+            setModalState(false);
+          }}
+        >
           <ReactAudioPlayer
             className="audio-player"
             playing={audioPlayState}
